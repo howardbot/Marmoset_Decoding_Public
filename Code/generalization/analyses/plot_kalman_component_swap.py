@@ -9,10 +9,10 @@ import pandas as pd
 
 _THIS = Path(__file__).resolve().parent
 REPO = _THIS.parents[2]
-IN_DIR = REPO / "Results" / "manifold_geometry" / "kalman_component_swap"
+IN_DIR = REPO / "Results" / "workflows" / "manifold_geometry" / "kalman_component_swap"
 SUMMARY = IN_DIR / "component_swap_summary.csv"
 FIGURE = (
-    REPO / "Results" / "manifold_geometry" / "figures"
+    REPO / "Results" / "workflows" / "manifold_geometry" / "figures"
     / "fig_kalman_component_swap.png"
 )
 MODES = ["concatenated", "trial_aware"]

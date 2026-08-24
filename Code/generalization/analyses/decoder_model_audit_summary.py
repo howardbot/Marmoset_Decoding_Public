@@ -14,10 +14,11 @@ sys.path.insert(0, str(_THIS.parent))
 from private_readout_crossfit_summary import summarize_pair_metrics
 
 REPO = _THIS.parents[2]
-IN_DIR = REPO / "Results" / "manifold_geometry" / "decoder_audit"
+IN_DIR = REPO / "Results" / "workflows" / "manifold_geometry" / "decoder_audit"
 REFERENCE = (
     REPO
     / "Results"
+    / "workflows"
     / "manifold_geometry"
     / "kalman_component_swap"
     / "component_swap_all.csv"
@@ -29,6 +30,7 @@ OUT_SUMMARY = IN_DIR / "decoder_audit_summary.csv"
 OUT_FIGURE = (
     REPO
     / "Results"
+    / "workflows"
     / "manifold_geometry"
     / "figures"
     / "fig_decoder_model_audit.png"

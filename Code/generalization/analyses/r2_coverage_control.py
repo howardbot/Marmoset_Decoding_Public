@@ -17,7 +17,7 @@ actually reduced.
                                            generalizable, even at matched coverage)
 
 Config: locked (bin=30, butter_o2, sigma=50ms, K_PCS=15), averaged CCA, velocity.
-Output: printed + Results/manifold_geometry/r2_coverage_control.csv
+Output: printed + Results/workflows/manifold_geometry/r2_coverage_control.csv
 """
 from __future__ import annotations
 
@@ -50,7 +50,7 @@ TARGET = "relative_velocity"
 N_REPS = 5
 SEED = 0
 REPO_ROOT = _THIS.parents[2]
-OUT_CSV = REPO_ROOT / "Results" / "manifold_geometry" / "r2_coverage_control.csv"
+OUT_CSV = REPO_ROOT / "Results" / "workflows" / "manifold_geometry" / "r2_coverage_control.csv"
 
 
 def load(session, exclude=()):

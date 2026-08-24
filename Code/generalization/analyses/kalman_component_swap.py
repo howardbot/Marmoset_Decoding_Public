@@ -30,7 +30,7 @@ from private_readout_crossfit import (
 )
 
 REPO = _THIS.parents[2]
-OUT_DIR = REPO / "Results" / "manifold_geometry" / "kalman_component_swap"
+OUT_DIR = REPO / "Results" / "workflows" / "manifold_geometry" / "kalman_component_swap"
 TRANSITION_MODES = ("concatenated", "trial_aware")
 N_COMPONENT_MASKS = 16
 

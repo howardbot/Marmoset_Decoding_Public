@@ -14,7 +14,7 @@ is the visual proof that the alignment recovers genuine shared dynamics.
 
 Config: K_PCS=12, single trial-averaged canonical reach (n_phase_bins=30), the v2 locked
 pipeline (bin=30, butter_o2, sigma=50ms). Reads NWB -> needs the HatLab env.
-Writes Results/manifold_geometry/figures/fig_latent_trajectories.png
+Writes Results/workflows/manifold_geometry/figures/fig_latent_trajectories.png
 """
 from __future__ import annotations
 import sys
@@ -109,7 +109,7 @@ def main():
                  "construction); the labelled held-out CC (§1) is the conservative, honest quantification.",
                  fontsize=11, y=0.995)
     fig.tight_layout(rect=(0, 0, 1, 0.96))
-    figdir = _THIS.parent.parent.parent / "Results" / "manifold_geometry" / "figures"
+    figdir = _THIS.parent.parent.parent / "Results" / "workflows" / "manifold_geometry" / "figures"
     figdir.mkdir(parents=True, exist_ok=True)
     out = figdir / "fig_latent_trajectories.png"
     fig.savefig(out, dpi=150, bbox_inches="tight")

@@ -20,24 +20,28 @@ REPO = THIS.parents[3]
 ORIGINAL_PATH = (
     REPO
     / "Results"
+    / "workflows"
     / "generalization"
     / "locked_position_time_resolved_ts_random_fixed40.csv"
 )
 FORGET_PATH = (
     REPO
     / "Results"
+    / "workflows"
     / "manifold_geometry"
     / "forget_control_position_time_resolved_long.csv"
 )
 OUT_CSV = (
     REPO
     / "Results"
+    / "workflows"
     / "manifold_geometry"
     / "interference_vs_forget_position_time_resolved.csv"
 )
 OUT_FIGURE = (
     REPO
     / "Results"
+    / "workflows"
     / "manifold_geometry"
     / "figures"
     / "fig_interference_vs_forget_position_time_resolved.png"

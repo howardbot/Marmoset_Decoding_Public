@@ -19,7 +19,7 @@ This subsumes: pca_robustness_check, pca_dim_decoding, cca_singletrial_check,
 cross_day_decode_vs_pca, cca_double_sweep, plot_asymmetry_persistence.
 
 Config: locked (bin=30, butter_o2, sigma=50ms, 0828 trial-41 excluded).
-Output: Results/manifold_geometry/dimension_sweep_long.csv (+ figure).
+Output: Results/workflows/manifold_geometry/dimension_sweep_long.csv (+ figure).
 """
 from __future__ import annotations
 
@@ -62,8 +62,8 @@ N_R1R1_SAMPLE = 42                        # R1->R1 baseline pairs, balanced to t
                                           # (running all 182 across the full sweep is ~5x).
 
 REPO_ROOT = _THIS.parents[1]
-OUT_CSV = REPO_ROOT / "Results" / "manifold_geometry" / "dimension_sweep_long.csv"
-FIG_DIR = REPO_ROOT / "Results" / "manifold_geometry" / "figures"
+OUT_CSV = REPO_ROOT / "Results" / "workflows" / "manifold_geometry" / "dimension_sweep_long.csv"
+FIG_DIR = REPO_ROOT / "Results" / "workflows" / "manifold_geometry" / "figures"
 
 
 def load_session(session, target, exclude=()):

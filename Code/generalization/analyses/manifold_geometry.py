@@ -24,7 +24,7 @@ The headline test for B != A asymmetry is:
    mean alignment(R1 -> basis_R2) > mean alignment(R2 -> basis_R1)
    equivalently: outside_var(R2 vs R1_basis) > outside_var(R1 vs R2_basis)
 
-Outputs (Results/manifold_geometry/):
+Outputs (Results/workflows/manifold_geometry/):
   - per_session_metrics.csv     : dim, PR, n_units, n_trials per session
   - pairwise_metrics_long.csv   : one row per ordered (i, j) pair
   - alignment_matrix.csv        : matrix of alignment(j -> basis_i)
@@ -69,7 +69,7 @@ from cross_day_decoder import (
 warnings.filterwarnings("ignore")
 
 REPO_ROOT = _THIS_DIR.parents[1]
-RESULTS_DIR = REPO_ROOT / "Results" / "manifold_geometry"
+RESULTS_DIR = REPO_ROOT / "Results" / "workflows" / "manifold_geometry"
 RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 
 # Effective subspace dimensionality used for alignment index. Elsayed 2016

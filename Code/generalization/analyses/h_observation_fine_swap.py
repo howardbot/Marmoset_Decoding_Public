@@ -44,7 +44,7 @@ from readout_subspaces import (
 
 
 REPO = _THIS.parents[2]
-OUT_DIR = REPO / "Results" / "manifold_geometry" / "h_observation_fine_swap"
+OUT_DIR = REPO / "Results" / "workflows" / "manifold_geometry" / "h_observation_fine_swap"
 OBSERVATION_FAMILIES = ("no_intercept", "affine")
 Q_CONTEXTS = ("source", "target")
 AXIS_NAMES = ("x", "y", "z")

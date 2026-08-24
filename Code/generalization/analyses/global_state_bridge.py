@@ -22,7 +22,7 @@ with per-trial decode goodness under (a) an R1-trained decoder (R1->R2) and (b) 
   just noise: both correlate (noisy trials decode worse for everyone) -> NOT the bridge.
 
 Config: single-trial CCA, K_PCS=12, decode target = position (headline). 0828 trial-41 excluded. n(R2)=3.
-Output: Results/manifold_geometry/global_state_bridge.csv (+ figure).  Reads NWB -> HatLab env.
+Output: Results/workflows/manifold_geometry/global_state_bridge.csv (+ figure).  Reads NWB -> HatLab env.
 """
 from __future__ import annotations
 
@@ -58,8 +58,8 @@ K_GLOBAL = 2                 # dims of the global-state subspace G
 N_PHASE = N_PHASE_BINS
 SEED = 0
 REPO = _THIS.parents[2]
-OUT_CSV = REPO / "Results" / "manifold_geometry" / "global_state_bridge.csv"
-FIG = REPO / "Results" / "manifold_geometry" / "figures" / "fig_global_state_bridge.png"
+OUT_CSV = REPO / "Results" / "workflows" / "manifold_geometry" / "global_state_bridge.csv"
+FIG = REPO / "Results" / "workflows" / "manifold_geometry" / "figures" / "fig_global_state_bridge.png"
 
 
 def load(session, exclude=()):

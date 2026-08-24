@@ -37,7 +37,7 @@ from private_readout_crossfit import (
 )
 
 REPO = _THIS.parents[2]
-OUT_DIR = REPO / "Results" / "manifold_geometry" / "kalman_gain_equalization"
+OUT_DIR = REPO / "Results" / "workflows" / "manifold_geometry" / "kalman_gain_equalization"
 REPEATS = 5
 VARIANTS = (
     "original",

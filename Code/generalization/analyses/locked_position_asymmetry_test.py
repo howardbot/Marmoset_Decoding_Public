@@ -21,7 +21,7 @@ from scipy import stats
 
 THIS = Path(__file__).resolve()
 REPO = THIS.parents[3]
-RESULT_DIR = REPO / "Results/generalization"
+RESULT_DIR = REPO / "Results/workflows/generalization"
 FIGURE_DIR = RESULT_DIR / "figures"
 N_BOOTSTRAP = 100_000
 SEED = 20260811

@@ -16,14 +16,14 @@ from private_readout_crossfit_summary import summarize_pair_metrics
 from private_readout_threshold_sweep import THRESHOLDS
 
 REPO = THIS_DIR.parents[2]
-IN_DIR = REPO / "Results" / "manifold_geometry" / "private_readout_threshold_sweep"
+IN_DIR = REPO / "Results" / "workflows" / "manifold_geometry" / "private_readout_threshold_sweep"
 OUT_ALL = IN_DIR / "threshold_sweep_all.csv"
 OUT_PAIR = IN_DIR / "threshold_sweep_pair_means.csv"
 OUT_SUMMARY = IN_DIR / "threshold_sweep_summary.csv"
 OUT_DAY = IN_DIR / "threshold_sweep_by_r2_session.csv"
 OUT_TABLE = IN_DIR / "threshold_sweep_table.csv"
 OUT_FIGURE = (
-    REPO / "Results" / "manifold_geometry" / "figures"
+    REPO / "Results" / "workflows" / "manifold_geometry" / "figures"
     / "fig_private_readout_threshold_sweep.png"
 )
 KEYS = ["cosine_threshold", "r1_session", "r2_session"]

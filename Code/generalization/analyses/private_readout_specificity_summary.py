@@ -9,7 +9,7 @@ import pandas as pd
 
 THIS_DIR = Path(__file__).resolve().parent
 REPO = THIS_DIR.parents[2]
-OUT_DIR = REPO / "Results" / "manifold_geometry" / "private_readout_specificity"
+OUT_DIR = REPO / "Results" / "workflows" / "manifold_geometry" / "private_readout_specificity"
 OUT_ALL = OUT_DIR / "private_specificity_all.csv"
 OUT_DISTRIBUTION = OUT_DIR / "private_specificity_null_distribution.csv"
 OUT_SUMMARY = OUT_DIR / "private_specificity_summary.csv"

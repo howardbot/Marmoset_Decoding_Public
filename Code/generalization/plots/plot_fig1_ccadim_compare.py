@@ -16,7 +16,7 @@ two sources stitch cleanly.
 Rows = target (velocity, position); columns = d=15 then d=3. Colormap vmax is
 shared within a row so the brightening at d=3 is directly comparable.
 
-Writes Results/generalization/figures/fig1_ccadim_compare.png.
+Writes Results/workflows/generalization/figures/fig1_ccadim_compare.png.
 """
 from __future__ import annotations
 
@@ -37,7 +37,7 @@ from plotting_common import (
 )
 
 REPO_ROOT = _THIS.parents[1]
-CCA_CSV = REPO_ROOT / "Results" / "generalization" / "cca_sweep_long.csv"
+CCA_CSV = REPO_ROOT / "Results" / "workflows" / "generalization" / "cca_sweep_long.csv"
 
 
 def matrix_at_dim(main_df, cca_df, target_mode, d):

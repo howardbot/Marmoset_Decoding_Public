@@ -10,9 +10,9 @@ config — the locked configuration for downstream analyses remains
 20 ms / sigma 50 ms as set in `cross_day_decoder.py`.
 
 Outputs:
-  Results/generalization/r1_config_sweep_long.csv     one row per (bin, sigma, train, test)
-  Results/generalization/r1_config_sweep_summary.csv  one row per (bin, sigma)
-  Results/generalization/r1_config_sweep_heatmap.png  2 metric rows x 4 config cols
+  Results/workflows/generalization/r1_config_sweep_long.csv     one row per (bin, sigma, train, test)
+  Results/workflows/generalization/r1_config_sweep_summary.csv  one row per (bin, sigma)
+  Results/workflows/generalization/r1_config_sweep_heatmap.png  2 metric rows x 4 config cols
 """
 from __future__ import annotations
 
@@ -40,7 +40,7 @@ import cross_day_decoder as cdd  # to override BIN_SIZE_MS / SMOOTH_SIGMA_MS  # 
 warnings.filterwarnings("ignore")
 
 REPO_ROOT = _THIS_DIR.parents[1]
-RES = REPO_ROOT / "Results" / "generalization"
+RES = REPO_ROOT / "Results" / "workflows" / "generalization"
 
 BIN_SIZES = [10, 20, 30, 40, 50]
 SIGMAS = [50, 100]

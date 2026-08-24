@@ -20,7 +20,7 @@ from decoder_utils import (
 )
 
 
-RESULTS_DIR = Path(__file__).resolve().parents[2] / "Results"
+RESULTS_DIR = Path(__file__).resolve().parents[2] / "Results" / "workflows" / "data_quality"
 
 
 def build_parser():

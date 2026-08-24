@@ -10,10 +10,10 @@ import pandas as pd
 
 _THIS = Path(__file__).resolve().parent
 REPO = _THIS.parents[2]
-IN_DIR = REPO / "Results" / "manifold_geometry" / "h_observation_fine_swap"
+IN_DIR = REPO / "Results" / "workflows" / "manifold_geometry" / "h_observation_fine_swap"
 SUMMARY = IN_DIR / "h_fine_summary.csv"
 FIGURE = (
-    REPO / "Results" / "manifold_geometry" / "figures"
+    REPO / "Results" / "workflows" / "manifold_geometry" / "figures"
     / "fig_h_observation_fine_swap.png"
 )
 COLORS = {

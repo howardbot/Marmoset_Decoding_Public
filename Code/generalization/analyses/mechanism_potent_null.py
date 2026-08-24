@@ -21,7 +21,7 @@ Every learned object (both PCAs, kinematic scaling, ridge alpha, readout, and
 potent/null bases) is fit without the outer held-out trials.  Folds are grouped
 by complete reaches.  Ridge alpha is selected by an inner trial-grouped CV.
 
-Outputs are written below Results/manifold_geometry/balanced_potent_null/.
+Outputs are written below Results/workflows/manifold_geometry/balanced_potent_null/.
 """
 from __future__ import annotations
 
@@ -87,7 +87,7 @@ RIDGE_GRID = (0.0, 1e-6, 1e-5, 1e-4, 1e-3, 1e-2, 1e-1, 1.0, 10.0)
 
 REPO_ROOT = _THIS.parents[2]
 DEFAULT_OUT_DIR = (
-    REPO_ROOT / "Results" / "manifold_geometry" / "balanced_potent_null"
+    REPO_ROOT / "Results" / "workflows" / "manifold_geometry" / "balanced_potent_null"
 )
 
 # Keep training mean and std

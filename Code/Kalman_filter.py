@@ -21,7 +21,7 @@ N_SPLITS = 5
 LAG_BINS_LIST = list(range(1, 16))  # 10..150 ms in 10 ms steps
 C_VALUE = 1.0  # match Origin's KalmanFilterRegression(C=1)
 PINV_RCOND = 1e-10
-LAG_GRID_PLOT_PATH = Path(__file__).resolve().parent.parent / "Results" / "trial_aware_kalman_lag_grid.png"
+LAG_GRID_PLOT_PATH = Path(__file__).resolve().parent.parent / "Results" / "workflows" / "decoder_benchmarks" / "trial_aware_kalman_lag_grid.png"
 
 
 # Kording-style Kalman decoder with trial-aware state transitions.

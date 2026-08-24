@@ -20,24 +20,28 @@ REPO = THIS.parents[3]
 ORIGINAL = (
     REPO
     / "Results"
+    / "workflows"
     / "generalization"
     / "interference_position_cumulative_m2_random_fixed40_by_r2.csv"
 )
 FORGET = (
     REPO
     / "Results"
+    / "workflows"
     / "manifold_geometry"
     / "forget_control_position_cumulative_m2_cells.csv"
 )
 OUT_CSV = (
     REPO
     / "Results"
+    / "workflows"
     / "manifold_geometry"
     / "interference_vs_forget_position_cumulative_m2.csv"
 )
 OUT_FIGURE = (
     REPO
     / "Results"
+    / "workflows"
     / "manifold_geometry"
     / "figures"
     / "fig_interference_vs_forget_position_cumulative_m2.png"

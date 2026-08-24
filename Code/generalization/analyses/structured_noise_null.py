@@ -8,7 +8,7 @@ low-dimensional covariance directions that the original independent white-noise
 null omitted. It does not match temporal autocorrelation and is not a full noise
 model.
 
-Output: Results/manifold_geometry/structured_noise_null.csv
+Output: Results/workflows/manifold_geometry/structured_noise_null.csv
 """
 from __future__ import annotations
 
@@ -43,7 +43,7 @@ SEED = 20260713
 TARGET = "relative_position"
 
 REPO = _THIS.parents[2]
-OUT_CSV = REPO / "Results" / "manifold_geometry" / "structured_noise_null.csv"
+OUT_CSV = REPO / "Results" / "workflows" / "manifold_geometry" / "structured_noise_null.csv"
 
 
 def positive_covariance_increment(

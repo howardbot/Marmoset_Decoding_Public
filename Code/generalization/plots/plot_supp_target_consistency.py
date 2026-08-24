@@ -8,7 +8,7 @@ targets.
 
 Spearman rho between vel and pos M2 quantifies the cross-target agreement.
 
-Writes ``Results/generalization/figures/fig_supp_target_consistency.png``.
+Writes ``Results/workflows/generalization/figures/fig_supp_target_consistency.png``.
 """
 from __future__ import annotations
 

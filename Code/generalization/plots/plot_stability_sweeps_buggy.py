@@ -17,7 +17,7 @@ REPO = pathlib.Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
 from plotting_common import filter_locked
 
-RES = REPO / "Results"
+RES = REPO / "Results" / "workflows" / "decoder_benchmarks"
 OUT = RES / "generalization" / "figures" / "fig_stability_sweeps_buggy.png"
 COL = {"R1->R2": "#e74c3c", "R2->R1": "#3498db", "R1->R1": "#9aa0a6"}
 

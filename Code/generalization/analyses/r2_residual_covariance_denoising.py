@@ -32,11 +32,11 @@ full_covariance_match
 
 Outputs
 -------
-Results/manifold_geometry/r2_residual_covariance_denoising_crossfit.csv
-Results/manifold_geometry/r2_residual_covariance_denoising_pairs.csv
-Results/manifold_geometry/r2_residual_covariance_denoising_r2_days.csv
-Results/manifold_geometry/r2_residual_covariance_denoising_summary.csv
-Results/manifold_geometry/figures/fig_r2_residual_covariance_denoising.png
+Results/workflows/manifold_geometry/r2_residual_covariance_denoising_crossfit.csv
+Results/workflows/manifold_geometry/r2_residual_covariance_denoising_pairs.csv
+Results/workflows/manifold_geometry/r2_residual_covariance_denoising_r2_days.csv
+Results/workflows/manifold_geometry/r2_residual_covariance_denoising_summary.csv
+Results/workflows/manifold_geometry/figures/fig_r2_residual_covariance_denoising.png
 """
 from __future__ import annotations
 
@@ -90,7 +90,7 @@ CONDITIONS = (
 )
 
 REPO = _THIS.parents[2]
-OUT_DIR = REPO / "Results" / "manifold_geometry"
+OUT_DIR = REPO / "Results" / "workflows" / "manifold_geometry"
 OUT_CROSSFIT = OUT_DIR / "r2_residual_covariance_denoising_crossfit.csv"
 OUT_PAIRS = OUT_DIR / "r2_residual_covariance_denoising_pairs.csv"
 OUT_DAYS = OUT_DIR / "r2_residual_covariance_denoising_r2_days.csv"

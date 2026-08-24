@@ -13,7 +13,7 @@ sys.path.insert(0, str(_THIS.parent))
 from private_readout_crossfit_summary import summarize_pair_metrics
 
 REPO = _THIS.parents[2]
-IN_DIR = REPO / "Results" / "manifold_geometry" / "private_direction_localization"
+IN_DIR = REPO / "Results" / "workflows" / "manifold_geometry" / "private_direction_localization"
 OUT_SUMMARY = IN_DIR / "localization_summary.csv"
 OUT_DAY = IN_DIR / "localization_by_r2_session.csv"
 OUT_TRIANGLE = IN_DIR / "triangle_cells.csv"

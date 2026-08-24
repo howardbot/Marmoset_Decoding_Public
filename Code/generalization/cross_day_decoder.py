@@ -8,12 +8,12 @@ For each ordered pair (train_day, test_day) of r1 sessions:
     contains the same overfitting protection as off-diagonal entries (which
     never see test-day kinematics during fitting).
 
-All decoder hyperparameters come from `Results/decoder_baseline_summary.md`:
+All decoder hyperparameters come from `Results/workflows/decoder_benchmarks/decoder_baseline_summary.md`:
   bin = 20 ms, target = relative_velocity, sigma = 50 ms causal Gaussian,
   units = good + mua, trial window = start_to_peak, k = 15 PCs.
-The lag is read per training session from `Results/kalman_sweep_table.csv`.
+The lag is read per training session from `Results/workflows/decoder_benchmarks/kalman_sweep_table.csv`.
 
-Outputs (Results/generalization/):
+Outputs (Results/workflows/generalization/):
   - cross_day_corr_long.csv     : one row per (train, test, dim)
   - cross_day_corr_matrix.csv   : 13x13 mean-velocity correlation matrix
   - generalization_summary.csv  : within-day vs mean off-diag per training day
@@ -48,10 +48,10 @@ warnings.filterwarnings("ignore")
 
 REPO_ROOT = _THIS_DIR.parents[1]
 DATA_DIR = REPO_ROOT / "Data"
-RESULTS_DIR = REPO_ROOT / "Results" / "generalization"
+RESULTS_DIR = REPO_ROOT / "Results" / "workflows" / "generalization"
 RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 
-# Locked configuration (see Results/decoder_baseline_summary.md)
+# Locked configuration (see Results/workflows/decoder_benchmarks/decoder_baseline_summary.md)
 BIN_SIZE_MS = 20
 BIN_SIZE_S = BIN_SIZE_MS / 1000.0
 TARGET = "relative_velocity"
@@ -117,7 +117,7 @@ def load_optimal_lag_per_session():
     The sweep table is keyed by date (YYYYMMDD); we return a dict keyed by the
     same YYYYMMDD string so callers can look up via session_date(tag).
     """
-    csv = REPO_ROOT / "Results" / "kalman_sweep_table.csv"
+    csv = REPO_ROOT / "Results" / "workflows" / "decoder_benchmarks" / "kalman_sweep_table.csv"
     df = pd.read_csv(csv)
     mask = (
         (df.bin_size_ms == BIN_SIZE_MS)

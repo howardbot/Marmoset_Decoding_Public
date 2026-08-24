@@ -19,7 +19,7 @@ the two days' read-out subspaces AFTER alignment, for R1->R1 / R1->R2 / R2->R1 p
 quantification of read-out remapping (§4). Both days share the canonical space, so the angle is meaningful.
 
 Config: single-trial CCA, K_PCS=12, 0828 trial-41 excluded. Targets: position (headline) + velocity.
-Output: Results/manifold_geometry/readout_geometry_angles.csv (+ figure).
+Output: Results/workflows/manifold_geometry/readout_geometry_angles.csv (+ figure).
 """
 from __future__ import annotations
 
@@ -53,9 +53,9 @@ SEED = 0
 TARGETS = ["relative_position", "relative_velocity"]
 
 REPO = _THIS.parents[2]
-OUT_CSV = REPO / "Results" / "manifold_geometry" / "readout_geometry_angles.csv"
-OUT_CSV_X = REPO / "Results" / "manifold_geometry" / "readout_geometry_crossday.csv"
-FIG = REPO / "Results" / "manifold_geometry" / "figures" / "fig_readout_geometry_angles.png"
+OUT_CSV = REPO / "Results" / "workflows" / "manifold_geometry" / "readout_geometry_angles.csv"
+OUT_CSV_X = REPO / "Results" / "workflows" / "manifold_geometry" / "readout_geometry_crossday.csv"
+FIG = REPO / "Results" / "workflows" / "manifold_geometry" / "figures" / "fig_readout_geometry_angles.png"
 
 
 def load(session, target, exclude=()):

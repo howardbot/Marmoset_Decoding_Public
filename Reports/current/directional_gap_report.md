@@ -222,7 +222,7 @@ count in the complete forget grid.
 
 ### Variability Difference Versus Directional Gap
 
-![Variability difference versus fixed-40 directional gap](../../Results/manifold_geometry/figures/fig_variability_difference_vs_fixed40_gap.png)
+![Variability difference versus fixed-40 directional gap](../../Results/current/interference/variability_gap_association/figures/fig_variability_difference_vs_fixed40_gap.png)
 
 For each of the 42 R1/R2 session pairs, the horizontal axis is the signed
 variability difference \(\log(V_{R2}/V_{R1})\), and the vertical axis is the
@@ -299,7 +299,7 @@ sensitivity, not independent biological replication.
 
 ### Within-Reach Timing
 
-![Instantaneous and cumulative position-gap comparison](../../Results/manifold_geometry/figures/fig_interference_vs_forget_instantaneous_and_cumulative.png)
+![Instantaneous and cumulative position-gap comparison](../../Results/current/comparisons/interference_vs_forget/time_resolved/figures/fig_interference_vs_forget_instantaneous_and_cumulative.png)
 
 This timing diagnostic predates the complete grid and uses forget R1
 2026-06-09 against the three R2 dates; it should not be read as a 3-by-3
@@ -330,38 +330,47 @@ R2 day-3 value.
 
 ## Reproducibility
 
+Maintained analyses write complete outputs to `Results/workflows/`. The
+report-facing snapshot is refreshed through the explicit publication map:
+
+```bash
+python Code/generalization/run_analysis.py publish-results
+python Code/generalization/run_analysis.py publish-check
+```
+
+
 ### Original TS Variability-Matching Analysis
 
 - [Pair-specific matching](../../Code/generalization/analyses/pairwise_bidirectional_neural_variability_band_match.py)
 - [Matched decoding](../../Code/generalization/analyses/decode_pairwise_neural_variability_band.py)
 - [Significance analysis](../../Code/generalization/analyses/position_asymmetry_significance.py)
-- [Statistical results](../../Results/manifold_geometry/position_asymmetry_significance_matched_TS.csv)
-- [Pair-level results](../../Results/manifold_geometry/position_asymmetry_significance_pairs_TS.csv)
-- [Summary figure](../../Results/manifold_geometry/figures/fig_position_asymmetry_significance.png)
+- [Statistical results](../../Results/current/interference/neural_variability_matching/tables/position_asymmetry_significance_matched_TS.csv)
+- [Pair-level results](../../Results/current/interference/neural_variability_matching/tables/position_asymmetry_significance_pairs_TS.csv)
+- [Summary figure](../../Results/current/interference/neural_variability_matching/figures/fig_position_asymmetry_significance.png)
 
 ### Separate Equal-N Neural-plus-Position Follow-up
 
 - [Equal-N subset selection](../../Code/generalization/analyses/match_all_trial_pair_variability.py)
 - [Equal-N matched decoding](../../Code/generalization/analyses/decode_variability_matched_crossday.py)
-- [Fixed-40 selection summary](../../Results/manifold_geometry/variability_match_all42_fixed40_tol10_summary.csv)
-- [Fixed-40 selected trials](../../Results/manifold_geometry/variability_match_all42_fixed40_tol10_trials.csv)
-- [Fixed-40 decoding results](../../Results/manifold_geometry/variability_matched_crossday_fixed40.csv)
+- [Fixed-40 selection summary](../../Results/current/interference/neural_variability_matching/tables/variability_match_all42_fixed40_tol10_summary.csv)
+- [Fixed-40 selected trials](../../Results/current/interference/neural_variability_matching/tables/variability_match_all42_fixed40_tol10_trials.csv)
+- [Fixed-40 decoding results](../../Results/current/interference/neural_variability_matching/tables/variability_matched_crossday_fixed40.csv)
 
 ### Random Fixed-40 Trial-Count Control
 
 - [Random-subset implementation](../../Code/generalization/analyses/random_fixed40_crossday_control.py)
-- [Position repeat summary](../../Results/manifold_geometry/random_fixed40_position_summary.csv)
-- [Position cell means](../../Results/manifold_geometry/random_fixed40_position_cells.csv)
-- [Position session inference](../../Results/manifold_geometry/random_fixed40_position_inference.csv)
-- [Position figure](../../Results/manifold_geometry/figures/fig_random_fixed40_position_control.png)
-- [Velocity repeat summary](../../Results/manifold_geometry/random_fixed40_velocity_summary.csv)
-- [Velocity cell means](../../Results/manifold_geometry/random_fixed40_velocity_cells.csv)
-- [Velocity session inference](../../Results/manifold_geometry/random_fixed40_velocity_inference.csv)
-- [Velocity figure](../../Results/manifold_geometry/figures/fig_random_fixed40_velocity_control.png)
+- [Position repeat summary](../../Results/current/interference/trial_count_control/tables/random_fixed40_position_summary.csv)
+- [Position cell means](../../Results/current/interference/trial_count_control/tables/random_fixed40_position_cells.csv)
+- [Position session inference](../../Results/current/interference/trial_count_control/tables/random_fixed40_position_inference.csv)
+- [Position figure](../../Results/current/interference/trial_count_control/figures/fig_random_fixed40_position_control.png)
+- [Velocity repeat summary](../../Results/current/interference/trial_count_control/tables/random_fixed40_velocity_summary.csv)
+- [Velocity cell means](../../Results/current/interference/trial_count_control/tables/random_fixed40_velocity_cells.csv)
+- [Velocity session inference](../../Results/current/interference/trial_count_control/tables/random_fixed40_velocity_inference.csv)
+- [Velocity figure](../../Results/current/interference/trial_count_control/figures/fig_random_fixed40_velocity_control.png)
 - [Variability-difference plotting and statistics](../../Code/generalization/analyses/plot_variability_difference_vs_gap.py)
-- [Variability-difference pair data](../../Results/manifold_geometry/variability_difference_vs_fixed40_gap.csv)
-- [Variability-difference statistics](../../Results/manifold_geometry/variability_difference_vs_fixed40_gap_stats.csv)
-- [Variability-difference figure](../../Results/manifold_geometry/figures/fig_variability_difference_vs_fixed40_gap.png)
+- [Variability-difference pair data](../../Results/current/interference/variability_gap_association/tables/variability_difference_vs_fixed40_gap.csv)
+- [Variability-difference statistics](../../Results/current/interference/variability_gap_association/tables/variability_difference_vs_fixed40_gap_stats.csv)
+- [Variability-difference figure](../../Results/current/interference/variability_gap_association/figures/fig_variability_difference_vs_fixed40_gap.png)
 - [Paired-direction plotting and statistics](../../Code/generalization/analyses/plot_interference_forget_paired_directional.py)
 - [Paired equal-N cell data](../../Results/current/comparisons/interference_vs_forget/tables/paired_directional_cells.csv)
 - [Two-sided paired tests](../../Results/current/comparisons/interference_vs_forget/tables/paired_directional_tests.csv)
@@ -377,18 +386,18 @@ The pair-specific matching and decoder scripts now accept `--metric position`,
 - [Pair-specific matching implementation](../../Code/generalization/analyses/pairwise_bidirectional_neural_variability_band_match.py)
 - [Matched decoding implementation](../../Code/generalization/analyses/decode_pairwise_neural_variability_band.py)
 - [Significance implementation](../../Code/generalization/analyses/position_asymmetry_significance.py)
-- [Selection summary](../../Results/manifold_geometry/pairwise_bidirectional_position_variability_band_match_TS_summary.csv)
-- [Selected trials](../../Results/manifold_geometry/pairwise_bidirectional_position_variability_band_match_TS_trials.csv)
-- [Position-decoding results](../../Results/manifold_geometry/pairwise_position_variability_band_decoding_TS_position.csv)
-- [Statistical results](../../Results/manifold_geometry/position_asymmetry_significance_position_matched_TS.csv)
-- [Pair-level gaps](../../Results/manifold_geometry/position_asymmetry_significance_position_matched_pairs_TS.csv)
-- [Summary figure](../../Results/manifold_geometry/figures/fig_position_asymmetry_significance_position_matched.png)
-- [2-SD selection summary](../../Results/manifold_geometry/pairwise_bidirectional_position_variability_band_sd2_match_TS_summary.csv)
-- [2-SD decoding results](../../Results/manifold_geometry/pairwise_position_variability_band_sd2_decoding_TS_position.csv)
-- [2-SD statistical results](../../Results/manifold_geometry/position_asymmetry_significance_position_sd2_matched_TS.csv)
-- [3-SD selection summary](../../Results/manifold_geometry/pairwise_bidirectional_position_variability_band_sd3_match_TS_summary.csv)
-- [3-SD decoding results](../../Results/manifold_geometry/pairwise_position_variability_band_sd3_decoding_TS_position.csv)
-- [3-SD statistical results](../../Results/manifold_geometry/position_asymmetry_significance_position_sd3_matched_TS.csv)
+- [Selection summary](../../Results/current/interference/kinematic_variability_matching/tables/pairwise_bidirectional_position_variability_band_match_TS_summary.csv)
+- [Selected trials](../../Results/current/interference/kinematic_variability_matching/tables/pairwise_bidirectional_position_variability_band_match_TS_trials.csv)
+- [Position-decoding results](../../Results/current/interference/kinematic_variability_matching/tables/pairwise_position_variability_band_decoding_TS_position.csv)
+- [Statistical results](../../Results/current/interference/kinematic_variability_matching/tables/position_asymmetry_significance_position_matched_TS.csv)
+- [Pair-level gaps](../../Results/current/interference/kinematic_variability_matching/tables/position_asymmetry_significance_position_matched_pairs_TS.csv)
+- [Summary figure](../../Results/current/interference/kinematic_variability_matching/figures/fig_position_asymmetry_significance_position_matched.png)
+- [2-SD selection summary](../../Results/current/interference/kinematic_variability_matching/tables/pairwise_bidirectional_position_variability_band_sd2_match_TS_summary.csv)
+- [2-SD decoding results](../../Results/current/interference/kinematic_variability_matching/tables/pairwise_position_variability_band_sd2_decoding_TS_position.csv)
+- [2-SD statistical results](../../Results/current/interference/kinematic_variability_matching/tables/position_asymmetry_significance_position_sd2_matched_TS.csv)
+- [3-SD selection summary](../../Results/current/interference/kinematic_variability_matching/tables/pairwise_bidirectional_position_variability_band_sd3_match_TS_summary.csv)
+- [3-SD decoding results](../../Results/current/interference/kinematic_variability_matching/tables/pairwise_position_variability_band_sd3_decoding_TS_position.csv)
+- [3-SD statistical results](../../Results/current/interference/kinematic_variability_matching/tables/position_asymmetry_significance_position_sd3_matched_TS.csv)
 
 ### Forget-Control Analysis and Within-Reach Timing
 
@@ -403,12 +412,12 @@ The pair-specific matching and decoder scripts now accept `--metric position`,
 - [Instantaneous forget analysis](../../Code/generalization/analyses/forget_control_position_time_resolved.py)
 - [Instantaneous original-interference analysis](../../Code/generalization/analyses/interference_position_time_resolved_random_fixed40.py)
 - [Combined plotting script](../../Code/generalization/analyses/plot_interference_forget_instantaneous_and_cumulative.py)
-- [Cumulative checkpoint values](../../Results/manifold_geometry/forget_control_position_cumulative_m2_checkpoints.csv)
-- [Combined figure](../../Results/manifold_geometry/figures/fig_interference_vs_forget_instantaneous_and_cumulative.png)
+- [Cumulative checkpoint values](../../Results/current/comparisons/interference_vs_forget/time_resolved/tables/forget_control_position_cumulative_m2_checkpoints.csv)
+- [Combined figure](../../Results/current/comparisons/interference_vs_forget/time_resolved/figures/fig_interference_vs_forget_instantaneous_and_cumulative.png)
 
 ### TY Replication
 
-- [Locked TY cell gaps](../../Results/generalization/locked_position_asymmetry_pairs_ty.csv)
-- [R2-date summaries](../../Results/generalization/locked_position_asymmetry_by_r2_ty.csv)
-- [Date-aware significance](../../Results/generalization/locked_position_asymmetry_significance_ty.csv)
+- [Locked TY cell gaps](../../Results/current/cross_animal/ty_locked_position/tables/locked_position_asymmetry_pairs_ty.csv)
+- [R2-date summaries](../../Results/current/cross_animal/ty_locked_position/tables/locked_position_asymmetry_by_r2_ty.csv)
+- [Date-aware significance](../../Results/current/cross_animal/ty_locked_position/tables/locked_position_asymmetry_significance_ty.csv)
 - [TY paired-direction script](../../Code/generalization/analyses/plot_ty_paired_directional_significance.py)

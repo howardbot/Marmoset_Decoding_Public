@@ -15,8 +15,8 @@ The headline question: do R1->R2 / R2->R1 points lie ON or OFF that drift line?
 If R1->R2 / R2->R1 lie on the R1->R1 drift extrapolation -> no real asymmetry.
 If they deviate (especially asymmetrically) -> real interference signature.
 
-Reads Results/manifold_geometry/pairwise_metrics_long.csv.
-Writes Results/manifold_geometry/figures/fig_manifold_daygap.png.
+Reads Results/workflows/manifold_geometry/pairwise_metrics_long.csv.
+Writes Results/workflows/manifold_geometry/figures/fig_manifold_daygap.png.
 """
 from __future__ import annotations
 
@@ -30,8 +30,8 @@ import pandas as pd
 
 _THIS = Path(__file__).resolve().parents[1]
 REPO_ROOT = _THIS.parents[1]
-CSV = REPO_ROOT / "Results" / "manifold_geometry" / "pairwise_metrics_long.csv"
-FIG_DIR = REPO_ROOT / "Results" / "manifold_geometry" / "figures"
+CSV = REPO_ROOT / "Results" / "workflows" / "manifold_geometry" / "pairwise_metrics_long.csv"
+FIG_DIR = REPO_ROOT / "Results" / "workflows" / "manifold_geometry" / "figures"
 FIG_DIR.mkdir(parents=True, exist_ok=True)
 
 # Directional pair colors matching plotting_common style.

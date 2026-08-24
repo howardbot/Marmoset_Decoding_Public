@@ -9,7 +9,7 @@ Each bar = one day's same-day decoding. The line is the OLS fit; the legend
 reports R^2 (fraction of day-to-day variance the trend explains) and the
 p-value (probability of a trend this strong under no real relationship).
 
-Writes ``Results/generalization/figures/fig4_learning_trend.png``.
+Writes ``Results/workflows/generalization/figures/fig4_learning_trend.png``.
 """
 from __future__ import annotations
 

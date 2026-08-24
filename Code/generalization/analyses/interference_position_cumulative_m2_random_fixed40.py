@@ -41,7 +41,7 @@ from random_fixed40_crossday_control import (  # noqa: E402
 )
 
 REPO = THIS.parents[3]
-OUT_DIR = REPO / "Results" / "generalization"
+OUT_DIR = REPO / "Results" / "workflows" / "generalization"
 FIGURE_DIR = OUT_DIR / "figures"
 TARGET_MODE = "relative_position"
 N_TRIALS = 40
@@ -188,7 +188,7 @@ def validate_endpoints(paired: pd.DataFrame) -> None:
         value_name="cumulative_corr",
     )
     reference = pd.read_csv(
-        REPO / "Results" / "manifold_geometry" / "random_fixed40_position_long.csv"
+        REPO / "Results" / "workflows" / "manifold_geometry" / "random_fixed40_position_long.csv"
     )
     reference = reference.loc[reference["repeat"] < N_REPEATS][
         ["repeat", "pair_id", "direction", "random_corr"]

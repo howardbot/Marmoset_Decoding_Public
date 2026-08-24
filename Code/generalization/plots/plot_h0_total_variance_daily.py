@@ -29,11 +29,12 @@ import pandas as pd
 
 
 REPO = Path(__file__).resolve().parents[3]
-INPUT = REPO / "Results" / "manifold_geometry" / "h0_total_variance_control_pairs.csv"
-OUTPUT_CSV = REPO / "Results" / "manifold_geometry" / "h0_total_variance_daily.csv"
+INPUT = REPO / "Results" / "workflows" / "manifold_geometry" / "h0_total_variance_control_pairs.csv"
+OUTPUT_CSV = REPO / "Results" / "workflows" / "manifold_geometry" / "h0_total_variance_daily.csv"
 OUTPUT_FIG = (
     REPO
     / "Results"
+    / "workflows"
     / "manifold_geometry"
     / "figures"
     / "fig_h0_total_variance_daily.png"

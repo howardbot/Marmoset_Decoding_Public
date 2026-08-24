@@ -29,16 +29,18 @@ REPO = THIS.parents[3]
 VARIABILITY_PATH = (
     REPO
     / "Results"
+    / "workflows"
     / "manifold_geometry"
     / "trial_pair_variability_TS_daily.csv"
 )
 CELLS_PATH = (
     REPO
     / "Results"
+    / "workflows"
     / "manifold_geometry"
     / "random_fixed40_position_cells.csv"
 )
-OUT_DIR = REPO / "Results" / "manifold_geometry"
+OUT_DIR = REPO / "Results" / "workflows" / "manifold_geometry"
 FIGURE_DIR = OUT_DIR / "figures"
 OUT_DATA = OUT_DIR / "variability_difference_vs_fixed40_gap.csv"
 OUT_STATS = OUT_DIR / "variability_difference_vs_fixed40_gap_stats.csv"

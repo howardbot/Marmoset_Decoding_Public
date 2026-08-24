@@ -11,7 +11,7 @@ _THIS = Path(__file__).resolve().parent
 sys.path.insert(0, str(_THIS.parent))
 
 REPO = _THIS.parents[2]
-IN_DIR = REPO / "Results" / "manifold_geometry" / "private_readout_crossfit"
+IN_DIR = REPO / "Results" / "workflows" / "manifold_geometry" / "private_readout_crossfit"
 OUT_SUBSPACE = IN_DIR / "subspace_all.csv"
 OUT_KALMAN_SUBSPACE = IN_DIR / "kalman_subspace_all.csv"
 OUT_MAPS = IN_DIR / "maps_all.csv"

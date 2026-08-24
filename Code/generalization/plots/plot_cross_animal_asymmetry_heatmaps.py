@@ -22,7 +22,7 @@ import pandas as pd
 
 THIS = Path(__file__).resolve()
 REPO = THIS.parents[3]
-RESULT_DIR = REPO / "Results" / "generalization"
+RESULT_DIR = REPO / "Results" / "workflows" / "generalization"
 OUTPUT = (
     REPO
     / "Code"

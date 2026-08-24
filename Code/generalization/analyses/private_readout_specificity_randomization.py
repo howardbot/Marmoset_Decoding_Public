@@ -34,7 +34,7 @@ from readout_subspaces import (
 THRESHOLD = 0.5
 N_OUTPUT_NULL_DRAWS = 20
 REPO = THIS_DIR.parents[2]
-OUT_DIR = REPO / "Results" / "manifold_geometry" / "private_readout_specificity"
+OUT_DIR = REPO / "Results" / "workflows" / "manifold_geometry" / "private_readout_specificity"
 
 
 def selective_effect(

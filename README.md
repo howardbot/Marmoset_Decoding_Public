@@ -1,34 +1,38 @@
-# Marmoset Cross-Day Neural Decoding
+# Marmoset Cross-Day Decoding
 
-Research code and curated results for cross-day neural decoding analyses in
-marmosets. The repository covers the primary TS interference experiment, the
-TY interference replication, and the TS no-interference forget control.
+This repository contains the maintained analysis code, compact public result
+snapshot, data contract, and Markdown report for the TS/TY marmoset
+cross-session decoding project.
 
 Start with [PROJECT_INDEX.md](PROJECT_INDEX.md), which maps the active code,
-data contract, current Markdown report, and curated result files.
+data contract, current report, and curated result files.
 
 ## Repository contents
 
 - `Code/`: decoder implementations, maintained analysis workflows, plots,
-  diagnostics, and hypothesis tests.
+  diagnostics, hypothesis tests, and result-publication tools.
 - `Data/`: a data dictionary and session manifest only. Processed NWB files
   are intentionally not distributed in this repository.
 - `Reports/current/`: the current integrated scientific report in Markdown.
-- `Results/current/`: curated outputs for the latest analyses.
-- `Results/generalization/` and `Results/manifold_geometry/`: only the
-  additional tables and figures cited directly by the current report.
+- `Results/current/`: the tracked, report-facing tables and figures.
+- `Results/workflows/`: complete local analysis outputs and intermediates;
+  excluded from Git.
+- `Results/archive/`: frozen historical outputs; excluded from Git.
 
 ## Quick navigation
 
-List the maintained analysis entry points:
+List maintained analysis and maintenance commands:
 
 ```bash
 python Code/generalization/run_analysis.py list
 ```
 
-Validate Markdown links:
+After rerunning analyses, publish and verify the current result snapshot:
 
 ```bash
+python Code/generalization/run_analysis.py publish-results
+python Code/generalization/run_analysis.py publish-check
+python Code/generalization/run_analysis.py path-check
 python Code/generalization/run_analysis.py check-links
 ```
 
@@ -48,4 +52,5 @@ expected organization and known limitations.
 The active scripts and curated numerical outputs are included, but the source
 NWB files and a locked software-environment specification are not. Numerical
 results should therefore be treated as the documented output of the current
-analysis snapshot, not as a turnkey data release.
+analysis snapshot, not as a turnkey data release. Each published result has a
+workflow source mapping and SHA-256 digest under `Results/current/`.

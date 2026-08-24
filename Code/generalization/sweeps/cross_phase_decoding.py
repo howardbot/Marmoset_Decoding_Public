@@ -23,8 +23,8 @@ Config = LOCKED_CONFIG (bin=30, butter_o2, sigma=50ms, 0828 trial-41 excluded),
 target = relative_velocity, K_PCS = 15, P = 8 phase bins.
 
 Outputs:
-  Results/manifold_geometry/cross_phase_matrices.npz
-  Results/manifold_geometry/figures/fig_cross_phase.png
+  Results/workflows/manifold_geometry/cross_phase_matrices.npz
+  Results/workflows/manifold_geometry/figures/fig_cross_phase.png
 """
 from __future__ import annotations
 
@@ -58,8 +58,8 @@ RIDGE_ALPHA = 1.0
 SEED = 0
 
 REPO_ROOT = _THIS.parents[1]
-OUT_NPZ = REPO_ROOT / "Results" / "manifold_geometry" / "cross_phase_matrices.npz"
-FIG_DIR = REPO_ROOT / "Results" / "manifold_geometry" / "figures"
+OUT_NPZ = REPO_ROOT / "Results" / "workflows" / "manifold_geometry" / "cross_phase_matrices.npz"
+FIG_DIR = REPO_ROOT / "Results" / "workflows" / "manifold_geometry" / "figures"
 
 
 def build_session(session, exclude=()):

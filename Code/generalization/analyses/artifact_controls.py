@@ -13,7 +13,7 @@ data-quality artifact. If r1 and r2 are comparable, the asymmetry is more likely
 a genuine representational effect.
 
 Config: locked (bin=30, butter_o2, sigma=50ms, 0828 trial-41 excluded), velocity.
-Output: Results/manifold_geometry/artifact_controls.csv (+ figure).
+Output: Results/workflows/manifold_geometry/artifact_controls.csv (+ figure).
 NOTE: r2 has only 3 sessions -> its epoch stats are n=3 (interpret with caution).
 """
 from __future__ import annotations
@@ -63,8 +63,8 @@ N_FOLDS = 5
 SEED = 0
 
 REPO_ROOT = _THIS.parents[2]
-OUT_CSV = REPO_ROOT / "Results" / "manifold_geometry" / "artifact_controls.csv"
-FIG_DIR = REPO_ROOT / "Results" / "manifold_geometry" / "figures"
+OUT_CSV = REPO_ROOT / "Results" / "workflows" / "manifold_geometry" / "artifact_controls.csv"
+FIG_DIR = REPO_ROOT / "Results" / "workflows" / "manifold_geometry" / "figures"
 
 
 def load_session(session, exclude=()):

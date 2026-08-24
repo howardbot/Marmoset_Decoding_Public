@@ -23,7 +23,7 @@ stored as ``cond == "var_matched"`` in the CSV.
 Config: locked single-trial CCA, K_PCS=12, decode all d=12 dims, 0828 trial-41
 excluded.
 Targets: position (credible) + velocity. n=17 (R1=14, R2=3).
-Output: Results/manifold_geometry/h0_snr_control.csv (+ figure).
+Output: Results/workflows/manifold_geometry/h0_snr_control.csv (+ figure).
 """
 
 # Inject Gaussian noise into training activity for diagonal variance controls.
@@ -63,8 +63,8 @@ TARGETS = ["relative_position", "relative_velocity"]
 ALPHAS = [0.0, 0.25, 0.5, 0.75, 1.0, 1.5]
 
 REPO = _THIS.parents[2]
-OUT_CSV = REPO / "Results" / "manifold_geometry" / "h0_snr_control.csv"
-FIG = REPO / "Results" / "manifold_geometry" / "figures" / "fig_h0_snr_control.png"
+OUT_CSV = REPO / "Results" / "workflows" / "manifold_geometry" / "h0_snr_control.csv"
+FIG = REPO / "Results" / "workflows" / "manifold_geometry" / "figures" / "fig_h0_snr_control.png"
 
 
 def load(session, target, exclude=()):

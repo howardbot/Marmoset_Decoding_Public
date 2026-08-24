@@ -9,10 +9,11 @@ import pandas as pd
 
 _THIS = Path(__file__).resolve().parent
 REPO = _THIS.parents[2]
-IN_DIR = REPO / "Results" / "manifold_geometry" / "kalman_trial_order"
+IN_DIR = REPO / "Results" / "workflows" / "manifold_geometry" / "kalman_trial_order"
 AUDIT = (
     REPO
     / "Results"
+    / "workflows"
     / "manifold_geometry"
     / "decoder_audit"
     / "decoder_audit_all.csv"
@@ -25,6 +26,7 @@ OUT_SUMMARY = IN_DIR / "trial_order_summary.csv"
 OUT_FIGURE = (
     REPO
     / "Results"
+    / "workflows"
     / "manifold_geometry"
     / "figures"
     / "fig_kalman_trial_order_falsifier.png"

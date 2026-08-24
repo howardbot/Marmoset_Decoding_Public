@@ -18,7 +18,7 @@ Everything else is pinned to LOCKED_CONFIG (bin=30, butter_o2, lag=0, Kalman;
 0828 trial-41 excluded for 0828-involving pairs).
 
 Output (one long CSV):
-  Results/generalization/cca_sweep_long.csv
+  Results/workflows/generalization/cca_sweep_long.csv
     columns: metric, target_mode, train_session, test_session, pair_category,
              outlier_mode, n_cca, corr
     - decode rows: target_mode in {relative_velocity, relative_position}
@@ -68,7 +68,7 @@ N_REPEATS = 10                        # random trial-half splits for held-out CC
 SEED = 0
 
 REPO_ROOT = _THIS.parents[1]
-OUT_CSV = REPO_ROOT / "Results" / "generalization" / "cca_sweep_long.csv"
+OUT_CSV = REPO_ROOT / "Results" / "workflows" / "generalization" / "cca_sweep_long.csv"
 N_WORKERS = 2  # decode pass: one worker per target
 
 

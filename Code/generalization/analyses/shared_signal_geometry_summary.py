@@ -9,7 +9,7 @@ import pandas as pd
 
 THIS_DIR = Path(__file__).resolve().parent
 REPO = THIS_DIR.parents[2]
-OUT_DIR = REPO / "Results" / "manifold_geometry" / "shared_signal_geometry"
+OUT_DIR = REPO / "Results" / "workflows" / "manifold_geometry" / "shared_signal_geometry"
 OUT_ALL = OUT_DIR / "shared_signal_all.csv"
 OUT_NULL = OUT_DIR / "shared_signal_null_all.csv"
 OUT_SPECTRUM = OUT_DIR / "shared_signal_spectrum_summary.csv"

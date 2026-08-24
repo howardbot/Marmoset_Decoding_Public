@@ -9,8 +9,8 @@ import numpy as np
 import pandas as pd
 
 REPO = Path(__file__).resolve().parents[3]
-CSV = REPO / "Results" / "manifold_geometry" / "tuning_distributions.csv"
-OUT = REPO / "Results" / "generalization" / "figures" / "fig_tuning_1and3.png"
+CSV = REPO / "Results" / "workflows" / "manifold_geometry" / "tuning_distributions.csv"
+OUT = REPO / "Results" / "workflows" / "generalization" / "figures" / "fig_tuning_1and3.png"
 
 d = pd.read_csv(CSV)
 R1C, R2C = "#8d9295", "#e07a6b"

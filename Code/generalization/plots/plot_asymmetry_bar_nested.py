@@ -13,8 +13,8 @@ import numpy as np
 import pandas as pd
 
 REPO = Path(__file__).resolve().parents[3]
-CSV = REPO / "Results" / "manifold_geometry" / "nested_cca_by_r2_session.csv"
-OUT = REPO / "Results" / "generalization" / "figures" / "fig_asymmetry_bar_nested_position.png"
+CSV = REPO / "Results" / "workflows" / "manifold_geometry" / "nested_cca_by_r2_session.csv"
+OUT = REPO / "Results" / "workflows" / "generalization" / "figures" / "fig_asymmetry_bar_nested_position.png"
 
 d = pd.read_csv(CSV)
 s = d[(d.target == "relative_position") & (d.alignment_mode == "average")

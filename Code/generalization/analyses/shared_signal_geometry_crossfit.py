@@ -55,7 +55,7 @@ N_PHASE_BINS = 30
 N_CALIBRATION_TRIALS = 32
 N_EVALUATION_TRIALS = 8
 REPO = THIS_DIR.parents[2]
-OUT_DIR = REPO / "Results" / "manifold_geometry" / "shared_signal_geometry"
+OUT_DIR = REPO / "Results" / "workflows" / "manifold_geometry" / "shared_signal_geometry"
 PHASE_MODES = (
     "phase_signal_spectrum",
     "phase_residual_spectrum",

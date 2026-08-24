@@ -30,18 +30,21 @@ REPO = THIS.parents[3]
 INSTANTANEOUS_PATH = (
     REPO
     / "Results"
+    / "workflows"
     / "manifold_geometry"
     / "interference_vs_forget_position_time_resolved.csv"
 )
 CUMULATIVE_PATH = (
     REPO
     / "Results"
+    / "workflows"
     / "manifold_geometry"
     / "interference_vs_forget_position_cumulative_m2.csv"
 )
 OUT_FIGURE = (
     REPO
     / "Results"
+    / "workflows"
     / "manifold_geometry"
     / "figures"
     / "fig_interference_vs_forget_instantaneous_and_cumulative.png"

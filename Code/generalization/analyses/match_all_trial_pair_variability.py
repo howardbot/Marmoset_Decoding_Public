@@ -22,9 +22,9 @@ must not be treated as an independent confirmatory test.
 
 Outputs
 -------
-Results/manifold_geometry/variability_match_all42_summary.csv
-Results/manifold_geometry/variability_match_all42_trials.csv
-Results/manifold_geometry/figures/fig_variability_match_all42_heatmaps.png
+Results/workflows/manifold_geometry/variability_match_all42_summary.csv
+Results/workflows/manifold_geometry/variability_match_all42_trials.csv
+Results/workflows/manifold_geometry/figures/fig_variability_match_all42_heatmaps.png
 """
 from __future__ import annotations
 
@@ -59,7 +59,7 @@ from match_trial_pair_variability import (
 )
 
 REPO_ROOT = _THIS.parents[2]
-OUT_DIR = REPO_ROOT / "Results" / "manifold_geometry"
+OUT_DIR = REPO_ROOT / "Results" / "workflows" / "manifold_geometry"
 OUT_SUMMARY = OUT_DIR / "variability_match_all42_summary.csv"
 OUT_TRIALS = OUT_DIR / "variability_match_all42_trials.csv"
 OUT_FIGURE = OUT_DIR / "figures" / "fig_variability_match_all42_heatmaps.png"

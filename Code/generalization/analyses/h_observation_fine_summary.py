@@ -17,9 +17,9 @@ from private_readout_crossfit_summary import summarize_pair_metrics
 
 
 REPO = _THIS.parents[2]
-IN_DIR = REPO / "Results" / "manifold_geometry" / "h_observation_fine_swap"
+IN_DIR = REPO / "Results" / "workflows" / "manifold_geometry" / "h_observation_fine_swap"
 REFERENCE = (
-    REPO / "Results" / "manifold_geometry" / "kalman_component_swap"
+    REPO / "Results" / "workflows" / "manifold_geometry" / "kalman_component_swap"
     / "component_swap_all.csv"
 )
 SPLIT_KEYS = ["r1_session", "r2_session", "repeat", "fold"]

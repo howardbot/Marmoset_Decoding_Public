@@ -29,7 +29,7 @@ from private_readout_crossfit import (
 
 
 REPO = _THIS.parents[2]
-OUT_DIR = REPO / "Results" / "manifold_geometry" / "h_observation_fine_swap"
+OUT_DIR = REPO / "Results" / "workflows" / "manifold_geometry" / "h_observation_fine_swap"
 Q_CONTEXTS = ("source", "target")
 
 

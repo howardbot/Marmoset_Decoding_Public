@@ -15,7 +15,7 @@ training trial count is varied, isolating the training-set-size effect.
 Config: locked (bin=30, butter_o2, sigma=50ms, K_PCS=15, 0828 trial-41 excluded),
 velocity, decode in full canonical space.
 
-Output: printed table + Results/manifold_geometry/r2_trialcount_control.csv
+Output: printed table + Results/workflows/manifold_geometry/r2_trialcount_control.csv
 """
 from __future__ import annotations
 
@@ -48,7 +48,7 @@ TARGET = "relative_velocity"
 N_REPS = 5
 SEED = 0
 REPO_ROOT = _THIS.parents[2]
-OUT_CSV = REPO_ROOT / "Results" / "manifold_geometry" / "r2_trialcount_control.csv"
+OUT_CSV = REPO_ROOT / "Results" / "workflows" / "manifold_geometry" / "r2_trialcount_control.csv"
 
 
 def load(session, exclude=()):

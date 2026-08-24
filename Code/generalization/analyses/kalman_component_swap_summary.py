@@ -15,9 +15,9 @@ from kalman_components import COMPONENT_NAMES, shapley_values
 from private_readout_crossfit_summary import summarize_pair_metrics
 
 REPO = _THIS.parents[2]
-IN_DIR = REPO / "Results" / "manifold_geometry" / "kalman_component_swap"
+IN_DIR = REPO / "Results" / "workflows" / "manifold_geometry" / "kalman_component_swap"
 REFERENCE = (
-    REPO / "Results" / "manifold_geometry" / "private_readout_crossfit"
+    REPO / "Results" / "workflows" / "manifold_geometry" / "private_readout_crossfit"
     / "kalman_maps_all.csv"
 )
 OUT_ALL = IN_DIR / "component_swap_all.csv"

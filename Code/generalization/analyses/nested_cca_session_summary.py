@@ -13,9 +13,9 @@ sys.path.insert(0, str(_THIS.parent))
 from session_clustered_asymmetry import hierarchical_bootstrap
 
 REPO = _THIS.parents[2]
-IN_CSV = REPO / "Results" / "manifold_geometry" / "nested_cca_validation.csv"
-OUT_DAY = REPO / "Results" / "manifold_geometry" / "nested_cca_by_r2_session.csv"
-OUT_SUMMARY = REPO / "Results" / "manifold_geometry" / "nested_cca_session_summary.csv"
+IN_CSV = REPO / "Results" / "workflows" / "manifold_geometry" / "nested_cca_validation.csv"
+OUT_DAY = REPO / "Results" / "workflows" / "manifold_geometry" / "nested_cca_by_r2_session.csv"
+OUT_SUMMARY = REPO / "Results" / "workflows" / "manifold_geometry" / "nested_cca_session_summary.csv"
 N_BOOT = 20_000
 SEED = 20260713
 

@@ -24,7 +24,7 @@ for the target-trial-separated version.
 
 Config: single-trial phase-matched CCA, K_PCS=12, ridge read-out, both targets.
 n(R2)=3 -> report effect sizes, not p-values. Reads NWB -> HatLab env.
-Output: Results/manifold_geometry/potent_inclusion.csv (+ figure).
+Output: Results/workflows/manifold_geometry/potent_inclusion.csv (+ figure).
 """
 from __future__ import annotations
 
@@ -60,8 +60,8 @@ COS_THR = 0.5          # principal-angle cosine above which a read-out direction
 SEED = 0
 TARGETS = ["relative_position", "relative_velocity"]
 REPO_ROOT = _THIS.parents[2]
-OUT_CSV = REPO_ROOT / "Results" / "manifold_geometry" / "potent_inclusion.csv"
-FIG = REPO_ROOT / "Results" / "manifold_geometry" / "figures" / "fig_potent_inclusion.png"
+OUT_CSV = REPO_ROOT / "Results" / "workflows" / "manifold_geometry" / "potent_inclusion.csv"
+FIG = REPO_ROOT / "Results" / "workflows" / "manifold_geometry" / "figures" / "fig_potent_inclusion.png"
 
 
 def load(session, target, exclude=()):

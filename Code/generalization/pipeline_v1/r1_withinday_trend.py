@@ -3,12 +3,12 @@ at the locked configuration (20 ms bin, sigma = 50 ms causal Gaussian,
 velocity target, k = 15 PCs, per-session optimal lag).
 
 Reads the diagonal entries of the cross-day matrix from
-Results/generalization/cross_day_corr_long.csv (which already contains
+Results/workflows/generalization/cross_day_corr_long.csv (which already contains
 M1 = corr_concat_mean and M2 = corr_per_trial_mean).
 
 Outputs:
-  Results/legacy/report_figures/r1_withinday_trend.png
-  Results/generalization/r1_withinday_trend.png
+  Results/archive/legacy/report_figures/r1_withinday_trend.png
+  Results/workflows/generalization/r1_withinday_trend.png
 """
 from __future__ import annotations
 
@@ -19,8 +19,8 @@ import numpy as np
 import pandas as pd
 
 _THIS_DIR = Path(__file__).resolve().parents[1]
-RES = _THIS_DIR.parents[1] / "Results" / "generalization"
-FIG_DIR = _THIS_DIR.parents[1] / "Results" / "legacy" / "report_figures"
+RES = _THIS_DIR.parents[1] / "Results" / "workflows" / "generalization"
+FIG_DIR = _THIS_DIR.parents[1] / "Results" / "archive" / "legacy" / "report_figures"
 FIG_DIR.mkdir(parents=True, exist_ok=True)
 
 

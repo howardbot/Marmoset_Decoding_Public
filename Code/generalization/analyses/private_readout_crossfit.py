@@ -40,7 +40,7 @@ TARGET = "relative_position"
 THRESHOLDS = (0.3, 0.5, 0.7)
 
 REPO = _THIS.parents[2]
-OUT_DIR = REPO / "Results" / "manifold_geometry" / "private_readout_crossfit"
+OUT_DIR = REPO / "Results" / "workflows" / "manifold_geometry" / "private_readout_crossfit"
 
 
 def trial_folds(meta: pd.DataFrame, n_folds: int, seed: int) -> list[np.ndarray]:

@@ -10,7 +10,7 @@ only the 0828 row/column, not the rest of the matrix:
 
 Uses Kalman / relative_velocity (LOCKED_CONFIG primary) for the comparison.
 
-Writes ``Results/generalization/figures/fig_supp_trial41_outlier.png``.
+Writes ``Results/workflows/generalization/figures/fig_supp_trial41_outlier.png``.
 """
 from __future__ import annotations
 

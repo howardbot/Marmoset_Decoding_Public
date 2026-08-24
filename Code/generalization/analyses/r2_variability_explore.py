@@ -15,7 +15,7 @@ Prediction (global-state account): R2 has higher noise_mag AND lower noise_PR /
 higher shared_frac -> the excess is population-level, not private single-unit noise.
 
 Exploratory, honest: n(R2)=3, report per-session values + epoch means, effect sizes.
-Reads NWB -> HatLab env. Output: Results/manifold_geometry/r2_variability_explore.csv (+ fig).
+Reads NWB -> HatLab env. Output: Results/workflows/manifold_geometry/r2_variability_explore.csv (+ fig).
 """
 from __future__ import annotations
 
@@ -44,8 +44,8 @@ BIN_MS = 30
 SMOOTHER_KW = {"smoother": "butter", "smooth_cutoff_hz": 6.0, "smooth_order": 2}
 N_PHASE = 30
 REPO_ROOT = _THIS.parents[2]
-OUT_CSV = REPO_ROOT / "Results" / "manifold_geometry" / "r2_variability_explore.csv"
-FIG = REPO_ROOT / "Results" / "manifold_geometry" / "figures" / "fig_r2_variability_explore.png"
+OUT_CSV = REPO_ROOT / "Results" / "workflows" / "manifold_geometry" / "r2_variability_explore.csv"
+FIG = REPO_ROOT / "Results" / "workflows" / "manifold_geometry" / "figures" / "fig_r2_variability_explore.png"
 
 
 def load(session, exclude=()):
@@ -115,7 +115,7 @@ def main():
                   f"(U={r['n_units']})")
     df = pd.DataFrame(rows)
     # merge behavioural + neural var from artifact_controls for the decoupling panel
-    ac = pd.read_csv(REPO_ROOT / "Results" / "manifold_geometry" / "artifact_controls.csv")
+    ac = pd.read_csv(REPO_ROOT / "Results" / "workflows" / "manifold_geometry" / "artifact_controls.csv")
     ac["session"] = ac["session"].astype(str)
     df = df.merge(ac[["session", "behav_var", "neural_var"]], on="session", how="left")
     OUT_CSV.parent.mkdir(parents=True, exist_ok=True)

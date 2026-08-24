@@ -37,7 +37,7 @@ from private_readout_crossfit import (
 )
 
 REPO = _THIS.parents[2]
-OUT_DIR = REPO / "Results" / "manifold_geometry" / "kalman_trial_order"
+OUT_DIR = REPO / "Results" / "workflows" / "manifold_geometry" / "kalman_trial_order"
 TARGET = "relative_position"
 REPEATS = 5
 N_PERMUTATIONS = 20

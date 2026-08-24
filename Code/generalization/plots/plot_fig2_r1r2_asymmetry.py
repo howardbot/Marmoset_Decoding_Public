@@ -15,7 +15,7 @@ height -- is the signal: a symmetric epoch difference would drop both.
 
 Two panels: Kalman / velocity and Kalman / position at LOCKED_CONFIG.
 
-Writes ``Results/generalization/figures/fig2_r1r2_asymmetry.png``.
+Writes ``Results/workflows/generalization/figures/fig2_r1r2_asymmetry.png``.
 """
 from __future__ import annotations
 

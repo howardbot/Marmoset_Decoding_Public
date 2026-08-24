@@ -52,7 +52,7 @@ from private_readout_crossfit import (
 from readout_subspaces import orthonormal_basis, readout_basis
 
 REPO = THIS_DIR.parents[2]
-OUT_DIR = REPO / "Results" / "manifold_geometry" / "kalman_control_space"
+OUT_DIR = REPO / "Results" / "workflows" / "manifold_geometry" / "kalman_control_space"
 REPEATS = 5
 TOP_PC_RANK = 3
 

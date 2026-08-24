@@ -41,11 +41,12 @@ from locked_position_time_resolved import (  # noqa: E402
 )
 
 REPO = THIS.parents[3]
-RESULT_DIR = REPO / "Results" / "generalization"
+RESULT_DIR = REPO / "Results" / "workflows" / "generalization"
 FIGURE_DIR = RESULT_DIR / "figures"
 SELECTIONS = (
     REPO
     / "Results"
+    / "workflows"
     / "manifold_geometry"
     / "variability_match_all42_fixed40_tol10_trials.csv"
 )

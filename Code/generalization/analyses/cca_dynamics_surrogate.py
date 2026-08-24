@@ -23,7 +23,7 @@ differing only by the permutation.
   - Real ≈ surrogate                  -> CCA is "too powerful", aligns covariance alone (bad).
 
 Reference category R1-R1 (within-epoch) is the positive control.
-Output: Results/manifold_geometry/cca_dynamics_surrogate.csv (+ figure).
+Output: Results/workflows/manifold_geometry/cca_dynamics_surrogate.csv (+ figure).
 """
 from __future__ import annotations
 
@@ -55,10 +55,10 @@ N_SPLITS = 100        # random trial-half splits (= # surrogate draws)
 SEED = 0
 
 REPO = _THIS.parents[2]
-OUT_CSV = REPO / "Results" / "manifold_geometry" / "cca_dynamics_surrogate.csv"
-OUT_CSV_BYDIM = REPO / "Results" / "manifold_geometry" / "cca_dynamics_surrogate_bydim.csv"
-FIG = REPO / "Results" / "manifold_geometry" / "figures" / "fig_cca_dynamics_surrogate.png"
-FIG_BYDIM = REPO / "Results" / "manifold_geometry" / "figures" / "fig_cca_dynamics_surrogate_bydim.png"
+OUT_CSV = REPO / "Results" / "workflows" / "manifold_geometry" / "cca_dynamics_surrogate.csv"
+OUT_CSV_BYDIM = REPO / "Results" / "workflows" / "manifold_geometry" / "cca_dynamics_surrogate_bydim.csv"
+FIG = REPO / "Results" / "workflows" / "manifold_geometry" / "figures" / "fig_cca_dynamics_surrogate.png"
+FIG_BYDIM = REPO / "Results" / "workflows" / "manifold_geometry" / "figures" / "fig_cca_dynamics_surrogate_bydim.png"
 
 
 def load_cache(session, exclude=()):

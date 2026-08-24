@@ -47,7 +47,7 @@ SMOOTHER_KW = {
     "smooth_order": 2,
 }
 REPO_ROOT = _THIS.parents[2]
-OUT_DIR = REPO_ROOT / "Results" / "manifold_geometry"
+OUT_DIR = REPO_ROOT / "Results" / "workflows" / "manifold_geometry"
 
 
 def session_date(session: str) -> str:

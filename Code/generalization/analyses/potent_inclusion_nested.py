@@ -9,7 +9,7 @@ Roles rotate three times. Target evaluation kinematics therefore never define
 the alignment or potent subspace. The source-day decoder may use all source
 trials because they are training data, not target evaluation labels.
 
-Output: Results/manifold_geometry/potent_inclusion_nested.csv
+Output: Results/workflows/manifold_geometry/potent_inclusion_nested.csv
 """
 from __future__ import annotations
 
@@ -40,7 +40,7 @@ SEED = 20260713
 TARGET = "relative_position"
 
 REPO = _THIS.parents[2]
-OUT_CSV = REPO / "Results" / "manifold_geometry" / "potent_inclusion_nested.csv"
+OUT_CSV = REPO / "Results" / "workflows" / "manifold_geometry" / "potent_inclusion_nested.csv"
 
 
 def fit_role_alignment(a, b, alignment_a, alignment_b, seed: int) -> NestedCCAAlignment:

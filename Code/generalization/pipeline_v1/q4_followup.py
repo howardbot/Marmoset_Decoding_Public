@@ -20,9 +20,9 @@ with the largest |r| tells us which slice of the manifold actually matters for
 behavioral decoding generalization.
 
 Outputs:
-  Results/generalization/q4_canonical_profile_per_pair.csv  -- 156 pairs x 15 cc + metrics
-  Results/generalization/q4_metric_correlations.csv         -- summary table
-  Results/generalization/q4_followup.png                    -- 4-panel figure
+  Results/workflows/generalization/q4_canonical_profile_per_pair.csv  -- 156 pairs x 15 cc + metrics
+  Results/workflows/generalization/q4_metric_correlations.csv         -- summary table
+  Results/workflows/generalization/q4_followup.png                    -- 4-panel figure
 """
 from __future__ import annotations
 
@@ -47,7 +47,7 @@ from manifold_align import heldout_canonical_correlations  # noqa: E402
 warnings.filterwarnings("ignore")
 
 REPO_ROOT = _THIS_DIR.parents[1]
-RES = REPO_ROOT / "Results" / "generalization"
+RES = REPO_ROOT / "Results" / "workflows" / "generalization"
 
 EFFECTIVE_DIM_THRESHOLD = 0.8  # canonical correlation considered "well aligned"
 

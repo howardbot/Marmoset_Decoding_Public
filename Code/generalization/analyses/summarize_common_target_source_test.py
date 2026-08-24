@@ -27,9 +27,9 @@ from decoder_consensus_crossanimal import PRIMARY_CONDITIONS
 
 
 REPO = THIS_DIR.parents[2]
-OUT_DIR = REPO / "Results" / "manifold_geometry" / "common_target_source_test"
+OUT_DIR = REPO / "Results" / "workflows" / "manifold_geometry" / "common_target_source_test"
 FIGURE = (
-    REPO / "Results" / "manifold_geometry" / "figures"
+    REPO / "Results" / "workflows" / "manifold_geometry" / "figures"
     / "fig_common_target_source_test.png"
 )
 TARGETS = ("relative_position", "relative_velocity")

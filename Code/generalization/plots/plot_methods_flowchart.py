@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import FancyBboxPatch, FancyArrowPatch
 
 REPO = Path(__file__).resolve().parents[3]
-OUT = REPO / "Results" / "generalization" / "figures" / "fig_methods_flowchart.png"
+OUT = REPO / "Results" / "workflows" / "generalization" / "figures" / "fig_methods_flowchart.png"
 
 NEU = "#dbe9f6"; NEU_E = "#3b78b8"     # neural stream (blue)
 MOV = "#fdead2"; MOV_E = "#d98a2b"     # movement stream (orange)

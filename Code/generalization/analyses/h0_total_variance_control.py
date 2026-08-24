@@ -18,10 +18,10 @@ Main control:
     noise.
 
 Outputs:
-    Results/manifold_geometry/h0_total_variance_control_pairs.csv
-    Results/manifold_geometry/h0_total_variance_control_seed_summary.csv
-    Results/manifold_geometry/h0_total_variance_control.csv
-    Results/manifold_geometry/figures/fig_h0_total_variance_control.png
+    Results/workflows/manifold_geometry/h0_total_variance_control_pairs.csv
+    Results/workflows/manifold_geometry/h0_total_variance_control_seed_summary.csv
+    Results/workflows/manifold_geometry/h0_total_variance_control.csv
+    Results/workflows/manifold_geometry/figures/fig_h0_total_variance_control.png
 """
 from __future__ import annotations
 
@@ -79,7 +79,7 @@ TARGETS = ("relative_position", "relative_velocity")
 DEFAULT_WORKERS = min(8, max(1, (os.cpu_count() or 2) // 2))
 
 REPO = THIS.parents[2]
-OUT_DIR = REPO / "Results" / "manifold_geometry"
+OUT_DIR = REPO / "Results" / "workflows" / "manifold_geometry"
 PAIR_CSV = OUT_DIR / "h0_total_variance_control_pairs.csv"
 SEED_CSV = OUT_DIR / "h0_total_variance_control_seed_summary.csv"
 SUMMARY_CSV = OUT_DIR / "h0_total_variance_control.csv"

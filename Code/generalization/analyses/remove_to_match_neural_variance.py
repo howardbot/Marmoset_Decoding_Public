@@ -19,10 +19,10 @@ transductive sensitivity analysis, not a deployable or confirmatory decoder.
 
 Outputs
 -------
-Results/manifold_geometry/remove_to_match_neural_variance_daily.csv
-Results/manifold_geometry/remove_to_match_neural_variance_pairs.csv
-Results/manifold_geometry/remove_to_match_neural_variance_summary.csv
-Results/manifold_geometry/figures/fig_remove_to_match_neural_variance.png
+Results/workflows/manifold_geometry/remove_to_match_neural_variance_daily.csv
+Results/workflows/manifold_geometry/remove_to_match_neural_variance_pairs.csv
+Results/workflows/manifold_geometry/remove_to_match_neural_variance_summary.csv
+Results/workflows/manifold_geometry/figures/fig_remove_to_match_neural_variance.png
 """
 from __future__ import annotations
 
@@ -83,7 +83,7 @@ SMOOTHER_KW = {
 R1_SESSIONS = SESSIONS_R1[-3:]
 R2_SESSIONS = SESSIONS_R2
 REPO = _THIS.parents[2]
-OUT_DIR = REPO / "Results" / "manifold_geometry"
+OUT_DIR = REPO / "Results" / "workflows" / "manifold_geometry"
 OUT_DAILY = OUT_DIR / "remove_to_match_neural_variance_daily.csv"
 OUT_PAIRS = OUT_DIR / "remove_to_match_neural_variance_pairs.csv"
 OUT_SUMMARY = OUT_DIR / "remove_to_match_neural_variance_summary.csv"

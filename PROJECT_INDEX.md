@@ -18,8 +18,16 @@ grids and path definitions live in
 ## Current report and results
 
 - [Directional-gap report](Reports/current/directional_gap_report.md)
-- [Curated result index](Results/current/README.md)
+- [Current result index](Results/current/README.md)
+- [Result publication map](Results/current/source_map.csv)
 - [Curated result manifest](Results/current/result_manifest.csv)
+
+The complete local result workspace is separated from the public snapshot:
+
+- `Results/workflows/`: active analysis outputs and large intermediate tables.
+- `Results/archive/legacy/`: frozen historical outputs and superseded backups.
+
+See [Results/README.md](Results/README.md) for lifecycle and publication rules.
 
 ## Active code
 
@@ -34,5 +42,7 @@ grids and path definitions live in
 
 ```bash
 python Code/generalization/run_analysis.py list
+python Code/generalization/run_analysis.py publish-check
+python Code/generalization/run_analysis.py path-check
 python Code/generalization/run_analysis.py check-links
 ```

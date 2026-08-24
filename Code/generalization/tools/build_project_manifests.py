@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import csv
+import hashlib
 from pathlib import Path
 
 
@@ -10,6 +11,7 @@ GENERALIZATION_DIR = REPO_ROOT / "Code" / "generalization"
 CURRENT_RESULTS_DIR = REPO_ROOT / "Results" / "current"
 SCRIPT_OUTPUT = GENERALIZATION_DIR / "script_manifest.csv"
 RESULT_OUTPUT = CURRENT_RESULTS_DIR / "result_manifest.csv"
+SOURCE_MAP = CURRENT_RESULTS_DIR / "source_map.csv"
 MAINTAINED_ENTRYPOINTS = {
     "Code/generalization/run_analysis.py",
     "Code/generalization/big_sweep_phase1_withinday.py",
@@ -19,6 +21,7 @@ MAINTAINED_ENTRYPOINTS = {
     "Code/generalization/analyses/position_asymmetry_significance.py",
     "Code/generalization/analyses/plot_interference_forget_paired_directional.py",
     "Code/generalization/analyses/plot_ty_paired_directional_significance.py",
+    "Code/generalization/tools/publish_current_results.py",
 }
 
 
@@ -61,7 +64,7 @@ def write_script_manifest() -> int:
             }
         )
     with SCRIPT_OUTPUT.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=rows[0].keys())
+        writer = csv.DictWriter(handle, fieldnames=rows[0].keys(), lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
     return len(rows)
@@ -79,23 +82,51 @@ def result_kind(path: Path) -> str:
     return "other"
 
 
+def sha256(path: Path) -> str:
+    """Return the SHA-256 digest for one curated artifact."""
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def publication_sources() -> dict[str, str]:
+    """Map current paths to their local workflow provenance when available."""
+    if not SOURCE_MAP.exists():
+        return {}
+    with SOURCE_MAP.open(newline="", encoding="utf-8") as handle:
+        rows = csv.DictReader(handle)
+        return {row["current_path"]: row["source_path"] for row in rows}
+
+
 def write_result_manifest() -> int:
     """Write one row for every curated file under ``Results/current``."""
     rows = []
+    sources = publication_sources()
     for path in sorted(CURRENT_RESULTS_DIR.rglob("*")):
         if not path.is_file() or path == RESULT_OUTPUT:
             continue
+        relative = path.relative_to(REPO_ROOT).as_posix()
         rows.append(
             {
-                "relative_path": path.relative_to(REPO_ROOT).as_posix(),
+                "relative_path": relative,
                 "kind": result_kind(path),
                 "size_bytes": path.stat().st_size,
+                "sha256": sha256(path),
+                "source_path": sources.get(relative, ""),
             }
         )
     CURRENT_RESULTS_DIR.mkdir(parents=True, exist_ok=True)
     with RESULT_OUTPUT.open("w", newline="", encoding="utf-8") as handle:
-        fieldnames = ("relative_path", "kind", "size_bytes")
-        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+        fieldnames = (
+            "relative_path",
+            "kind",
+            "size_bytes",
+            "sha256",
+            "source_path",
+        )
+        writer = csv.DictWriter(handle, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
     return len(rows)

@@ -8,7 +8,7 @@ import pandas as pd
 
 THIS_DIR = Path(__file__).resolve().parent
 REPO = THIS_DIR.parents[2]
-RESULT_DIR = REPO / "Results" / "manifold_geometry" / "kalman_control_space"
+RESULT_DIR = REPO / "Results" / "workflows" / "manifold_geometry" / "kalman_control_space"
 
 
 def load_shards(prefix: str) -> pd.DataFrame:

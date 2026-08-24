@@ -46,7 +46,7 @@ BIN_MS = 30
 SMOOTHER_KW = {"smoother": "butter", "smooth_cutoff_hz": 6.0, "smooth_order": 2}
 K, D, SEED = 12, 12, 0         # v2 re-anchor: K_PCS 15->12, decode ALL canonical dims (was top-2)
 TARGETS = ["relative_velocity", "relative_position"]
-OUT = _THIS.parents[2] / "Results" / "manifold_geometry"
+OUT = _THIS.parents[2] / "Results" / "workflows" / "manifold_geometry"
 FIG = OUT / "figures"
 
 

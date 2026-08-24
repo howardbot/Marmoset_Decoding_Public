@@ -14,8 +14,8 @@ We compute the off-diagonal entries for both methods and compare. Diagonal is
 not informative (CCA between identical days is approximately identity).
 
 Outputs:
-  Results/generalization/cca_ablation_matrix.csv
-  Results/generalization/cca_ablation.png
+  Results/workflows/generalization/cca_ablation_matrix.csv
+  Results/workflows/generalization/cca_ablation.png
 """
 from __future__ import annotations
 
@@ -41,7 +41,7 @@ from cross_day_decoder import (  # noqa: E402
 warnings.filterwarnings("ignore")
 
 REPO_ROOT = _THIS_DIR.parents[1]
-RES = REPO_ROOT / "Results" / "generalization"
+RES = REPO_ROOT / "Results" / "workflows" / "generalization"
 
 
 def eval_no_cca(train_data, test_data, lag_bins):

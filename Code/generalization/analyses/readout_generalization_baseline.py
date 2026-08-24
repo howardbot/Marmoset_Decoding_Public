@@ -18,8 +18,8 @@ Honesty on n: R2 is only 3 sessions, so pair-level bootstrap (42 ordered R1<->R2
 session-clustered view (mean per R2 day, range across the 3), and let the weaker of the two govern
 the claim.
 
-Input : Results/generalization/cca_sweep_long.csv  (per-pair decode corr; no NWB needed)
-Output: Results/manifold_geometry/readout_generalization_baseline.csv (+ figure)
+Input : Results/workflows/generalization/cca_sweep_long.csv  (per-pair decode corr; no NWB needed)
+Output: Results/workflows/manifold_geometry/readout_generalization_baseline.csv (+ figure)
 """
 from __future__ import annotations
 
@@ -31,9 +31,9 @@ import pandas as pd
 
 _THIS = Path(__file__).resolve().parent
 REPO = _THIS.parents[2]
-IN_CSV = REPO / "Results" / "generalization" / "cca_sweep_long.csv"
-OUT_CSV = REPO / "Results" / "manifold_geometry" / "readout_generalization_baseline.csv"
-FIG = REPO / "Results" / "manifold_geometry" / "figures" / "fig_readout_generalization_baseline.png"
+IN_CSV = REPO / "Results" / "workflows" / "generalization" / "cca_sweep_long.csv"
+OUT_CSV = REPO / "Results" / "workflows" / "manifold_geometry" / "readout_generalization_baseline.csv"
+FIG = REPO / "Results" / "workflows" / "manifold_geometry" / "figures" / "fig_readout_generalization_baseline.png"
 
 N_CCA = 12          # all canonical dims at K_PCS=12 (v2 config)
 N_BOOT = 10000

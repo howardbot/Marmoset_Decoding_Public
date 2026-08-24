@@ -46,7 +46,7 @@ from manifold_align import apply_alignment, cca_align  # noqa: E402
 
 
 REPO = THIS.parents[3]
-RESULT_DIR = REPO / "Results/generalization"
+RESULT_DIR = REPO / "Results/workflows/generalization"
 FIGURE_DIR = RESULT_DIR / "figures"
 BIN_SIZE_MS = 30
 TARGET = "relative_position"

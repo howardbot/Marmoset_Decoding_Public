@@ -7,9 +7,9 @@ interval. The interval is descriptive for this one animal, not population-level
 inference.
 
 Output:
-  Results/manifold_geometry/session_clustered_asymmetry_by_r2.csv
-  Results/manifold_geometry/session_clustered_asymmetry_summary.csv
-  Results/manifold_geometry/figures/fig_session_clustered_asymmetry.png
+  Results/workflows/manifold_geometry/session_clustered_asymmetry_by_r2.csv
+  Results/workflows/manifold_geometry/session_clustered_asymmetry_summary.csv
+  Results/workflows/manifold_geometry/figures/fig_session_clustered_asymmetry.png
 """
 from __future__ import annotations
 
@@ -21,10 +21,10 @@ import pandas as pd
 
 _THIS = Path(__file__).resolve().parent
 REPO = _THIS.parents[2]
-IN_CSV = REPO / "Results" / "generalization" / "cca_sweep_long.csv"
-OUT_DAY = REPO / "Results" / "manifold_geometry" / "session_clustered_asymmetry_by_r2.csv"
-OUT_SUMMARY = REPO / "Results" / "manifold_geometry" / "session_clustered_asymmetry_summary.csv"
-FIG = REPO / "Results" / "manifold_geometry" / "figures" / "fig_session_clustered_asymmetry.png"
+IN_CSV = REPO / "Results" / "workflows" / "generalization" / "cca_sweep_long.csv"
+OUT_DAY = REPO / "Results" / "workflows" / "manifold_geometry" / "session_clustered_asymmetry_by_r2.csv"
+OUT_SUMMARY = REPO / "Results" / "workflows" / "manifold_geometry" / "session_clustered_asymmetry_summary.csv"
+FIG = REPO / "Results" / "workflows" / "manifold_geometry" / "figures" / "fig_session_clustered_asymmetry.png"
 
 N_CCA = 12
 N_BOOT = 20_000

@@ -27,7 +27,7 @@ from readout_subspaces import principal_readout_subspaces, readout_basis
 
 THRESHOLDS = tuple(np.round(np.arange(0.0, 1.0, 0.1), 2))
 REPO = THIS_DIR.parents[2]
-OUT_DIR = REPO / "Results" / "manifold_geometry" / "private_readout_threshold_sweep"
+OUT_DIR = REPO / "Results" / "workflows" / "manifold_geometry" / "private_readout_threshold_sweep"
 
 
 def directional_scores(

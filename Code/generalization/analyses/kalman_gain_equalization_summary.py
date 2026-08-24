@@ -9,13 +9,13 @@ import pandas as pd
 
 _THIS = Path(__file__).resolve().parent
 REPO = _THIS.parents[2]
-IN_DIR = REPO / "Results" / "manifold_geometry" / "kalman_gain_equalization"
-AUDIT = REPO / "Results" / "manifold_geometry" / "decoder_audit" / "decoder_audit_all.csv"
+IN_DIR = REPO / "Results" / "workflows" / "manifold_geometry" / "kalman_gain_equalization"
+AUDIT = REPO / "Results" / "workflows" / "manifold_geometry" / "decoder_audit" / "decoder_audit_all.csv"
 OUT_ALL = IN_DIR / "gain_equalization_all.csv"
 OUT_PAIR = IN_DIR / "gain_equalization_pair_means.csv"
 OUT_DAY = IN_DIR / "gain_equalization_by_r2_session.csv"
 OUT_SUMMARY = IN_DIR / "gain_equalization_summary.csv"
-OUT_FIGURE = REPO / "Results" / "manifold_geometry" / "figures" / "fig_kalman_gain_equalization.png"
+OUT_FIGURE = REPO / "Results" / "workflows" / "manifold_geometry" / "figures" / "fig_kalman_gain_equalization.png"
 
 N_R2 = 3
 N_R1 = 14

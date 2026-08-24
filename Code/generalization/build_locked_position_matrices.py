@@ -42,7 +42,7 @@ from big_sweep_phase2_crossday import (
 
 
 REPO = THIS.parents[2]
-OUT_DIR = REPO / "Results" / "generalization"
+OUT_DIR = REPO / "Results" / "workflows" / "generalization"
 BIN_SIZE_MS = 30
 TARGET = "relative_position"
 SMOOTHER_LABEL = "butter_o2"

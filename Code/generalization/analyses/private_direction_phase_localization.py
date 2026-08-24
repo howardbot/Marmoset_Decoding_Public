@@ -46,7 +46,7 @@ from readout_subspaces import (
 )
 
 REPO = _THIS.parents[2]
-OUT_DIR = REPO / "Results" / "manifold_geometry" / "private_direction_localization"
+OUT_DIR = REPO / "Results" / "workflows" / "manifold_geometry" / "private_direction_localization"
 THRESHOLD = 0.5
 N_PHASE = 30
 BIN_SECONDS = 0.03

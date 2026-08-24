@@ -4,7 +4,7 @@ This is a ridge sweep, not a hyperparameter selection procedure. Every ridge
 value is reported. Target-session PCA and CCA use calibration trials only, and
 the identical held-out target folds are scored at d=3 and d=12.
 
-Output: Results/manifold_geometry/regularized_nested_cca.csv
+Output: Results/workflows/manifold_geometry/regularized_nested_cca.csv
 """
 from __future__ import annotations
 
@@ -41,7 +41,7 @@ SEED = 20260713
 TARGET = "relative_position"
 
 REPO = _THIS.parents[2]
-OUT_CSV = REPO / "Results" / "manifold_geometry" / "regularized_nested_cca.csv"
+OUT_CSV = REPO / "Results" / "workflows" / "manifold_geometry" / "regularized_nested_cca.csv"
 
 
 def main():

@@ -20,8 +20,8 @@ If 0828 has Kalman fail not because of noise but because of stereotypy, we
 expect: very high trial_pair_r AND very low between_var, relative to r1.
 
 Output:
-  Results/generalization/kinematic_variance.csv
-  Results/generalization/kinematic_variance.png
+  Results/workflows/generalization/kinematic_variance.csv
+  Results/workflows/generalization/kinematic_variance.png
 """
 from __future__ import annotations
 
@@ -47,7 +47,7 @@ from cross_day_decoder import (  # noqa: E402
 warnings.filterwarnings("ignore")
 
 REPO_ROOT = _THIS_DIR.parents[1]
-OUT_DIR = REPO_ROOT / "Results" / "generalization"
+OUT_DIR = REPO_ROOT / "Results" / "workflows" / "generalization"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 

@@ -15,7 +15,7 @@ Logic:
 Output:
   - Per-session: median |delta|, trend slope of delta vs trial_index, fraction
     of trials with |delta| > 50 ms.
-  - CSV with all per-trial deltas to Results/peak_alignment_deltas.csv.
+  - CSV with all per-trial deltas to Results/workflows/data_quality/peak_alignment_deltas.csv.
 """
 from __future__ import annotations
 
@@ -31,7 +31,7 @@ warnings.filterwarnings("ignore")
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 DATA_DIR = REPO_ROOT / "Data"
-RESULTS = REPO_ROOT / "Results"
+RESULTS = REPO_ROOT / "Results" / "workflows" / "data_quality"
 RESULTS.mkdir(exist_ok=True)
 
 

@@ -8,9 +8,9 @@ import pandas as pd
 
 THIS_DIR = Path(__file__).resolve().parent
 REPO = THIS_DIR.parents[2]
-IN_DIR = REPO / "Results" / "manifold_geometry" / "private_readout_specificity"
+IN_DIR = REPO / "Results" / "workflows" / "manifold_geometry" / "private_readout_specificity"
 IN_CSV = IN_DIR / "private_specificity_null_distribution.csv"
-FIG = REPO / "Results" / "manifold_geometry" / "figures" / "fig_private_specificity_null.png"
+FIG = REPO / "Results" / "workflows" / "manifold_geometry" / "figures" / "fig_private_specificity_null.png"
 
 COLORS = {
     "r1_potent_principal": "#537895",

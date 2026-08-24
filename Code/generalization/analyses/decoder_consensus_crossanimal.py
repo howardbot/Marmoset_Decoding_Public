@@ -57,7 +57,7 @@ from private_readout_crossfit import (
 
 
 REPO = THIS_DIR.parents[2]
-OUT_DIR = REPO / "Results" / "manifold_geometry" / "decoder_consensus_crossanimal"
+OUT_DIR = REPO / "Results" / "workflows" / "manifold_geometry" / "decoder_consensus_crossanimal"
 PRIMARY_CONDITIONS = (
     ("ridge", "instantaneous"),
     ("wiener", f"history_{WIENER_HISTORY_BINS}"),

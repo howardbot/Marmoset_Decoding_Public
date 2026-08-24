@@ -6,9 +6,9 @@ Two panels side by side:
   Right : Per-train-day bar chart of within-day CV correlation vs the mean
           off-diagonal correlation. The gap is the "generalization drop."
 
-Reads `Results/generalization/cross_day_corr_matrix.csv` and
-`Results/generalization/generalization_summary.csv`, writes the figure to
-`Results/generalization/cross_day_corr_matrix.png`.
+Reads `Results/workflows/generalization/cross_day_corr_matrix.csv` and
+`Results/workflows/generalization/generalization_summary.csv`, writes the figure to
+`Results/workflows/generalization/cross_day_corr_matrix.png`.
 """
 from __future__ import annotations
 
@@ -19,7 +19,7 @@ import numpy as np
 import pandas as pd
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
-RESULTS_DIR = REPO_ROOT / "Results" / "generalization"
+RESULTS_DIR = REPO_ROOT / "Results" / "workflows" / "generalization"
 
 
 R1_LAST_DATE = 20250813

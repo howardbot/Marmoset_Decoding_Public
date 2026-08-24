@@ -12,11 +12,11 @@ _THIS = Path(__file__).resolve().parent
 sys.path.insert(0, str(_THIS.parent))
 
 REPO = _THIS.parents[2]
-IN_DIR = REPO / "Results" / "manifold_geometry" / "private_readout_crossfit"
+IN_DIR = REPO / "Results" / "workflows" / "manifold_geometry" / "private_readout_crossfit"
 SUMMARY = IN_DIR / "mechanism_summary.csv"
 BY_DAY = IN_DIR / "mechanism_by_r2_session.csv"
 FIGURE = (
-    REPO / "Results" / "manifold_geometry" / "figures"
+    REPO / "Results" / "workflows" / "manifold_geometry" / "figures"
     / "fig_private_readout_crossfit.png"
 )
 

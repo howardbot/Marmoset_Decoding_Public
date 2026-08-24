@@ -41,7 +41,7 @@ BIN_MS = 30
 DT = BIN_MS / 1000.0
 SMOOTHER_KW = {"smoother": "butter", "smooth_cutoff_hz": 6.0, "smooth_order": 2}
 L2, SEED = 1.0, 0
-OUT = _THIS.parents[2] / "Results" / "manifold_geometry"
+OUT = _THIS.parents[2] / "Results" / "workflows" / "manifold_geometry"
 FIG = OUT / "figures"
 
 

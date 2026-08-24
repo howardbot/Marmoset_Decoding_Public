@@ -8,7 +8,7 @@ Same Kalman predictions, same data, two different evaluation conventions:
                               then average across trials and dims.
 
 Outputs:
-  Results/generalization/methods_heatmap.png
+  Results/workflows/generalization/methods_heatmap.png
 """
 from __future__ import annotations
 
@@ -20,7 +20,7 @@ import pandas as pd
 from scipy import stats
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
-RES = REPO_ROOT / "Results" / "generalization"
+RES = REPO_ROOT / "Results" / "workflows" / "generalization"
 
 
 def main():

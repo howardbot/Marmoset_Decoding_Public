@@ -3,7 +3,7 @@
 Shows *why* a variance threshold is the wrong way to pick dimensionality: 80% of the
 single-trial population variance needs ~46 PCs, but the trial-averaged reach *signal*
 saturates by ~2-3 PCs. The ~44 extra dims are trial-to-trial noise.
-Writes Results/manifold_geometry/figures/fig_pca_variance_cumulative.png
+Writes Results/workflows/manifold_geometry/figures/fig_pca_variance_cumulative.png
 """
 from __future__ import annotations
 import sys, warnings
@@ -21,7 +21,7 @@ from big_sweep_phase2_crossday import (
 warnings.filterwarnings("ignore")
 BIN_MS = 30; SK = {"smoother": "butter", "smooth_cutoff_hz": 6.0, "smooth_order": 2}
 NPC = 80
-OUT = _THIS.parents[2] / "Results" / "manifold_geometry" / "figures" / "fig_pca_variance_cumulative.png"
+OUT = _THIS.parents[2] / "Results" / "workflows" / "manifold_geometry" / "figures" / "fig_pca_variance_cumulative.png"
 
 def load(s, exclude=()):
     du.SESSION = s; du.PROCESSED_NWB = du.DATA_DIR / f"{s}_processed.nwb"; du.BIN_SIZE_SECONDS = BIN_MS/1000
@@ -43,7 +43,7 @@ def stack(curves):
     return out
 
 import pandas as pd
-CACHE = _THIS.parents[2] / "Results" / "manifold_geometry" / "_pca_variance_cache.npz"
+CACHE = _THIS.parents[2] / "Results" / "workflows" / "manifold_geometry" / "_pca_variance_cache.npz"
 if CACHE.exists():                                  # cached cumvar curves -> instant re-plots
     _z = np.load(CACHE); ST, SIG = _z["ST"], _z["SIG"]
 else:
@@ -72,7 +72,7 @@ ax.set_xlabel("# PCs (K_PCS)"); ax.set_ylabel("cumulative variance explained"); 
 ax.set_xlim(0.5, 45.5)   # match the decode sweep's x-range so both curves span the full width
 
 # RIGHT axis — cross-day decode corr vs K_PCS (single-trial CCA, decode top-2 canonical)
-dim = pd.read_csv(_THIS.parents[2] / "Results" / "manifold_geometry" / "dimension_sweep_long.csv")
+dim = pd.read_csv(_THIS.parents[2] / "Results" / "workflows" / "manifold_geometry" / "dimension_sweep_long.csv")
 dd = dim[(dim.trial_mode == "single_trial") & (dim.d == 2)]
 ax2 = ax.twinx()
 for pc, c in [("R1->R1", "#9aa0a6"), ("R2->R1", "#3498db"), ("R1->R2", "#e74c3c")]:

@@ -11,11 +11,15 @@ Code/generalization/docs/archive/
 Code/generalization/docs/notes/
 Code/generalization/docs/presentations/
 
+# Full local analysis workspace and frozen historical outputs.
+# Report-facing artifacts are explicitly published into Results/current.
+Results/workflows/
+Results/archive/
+
 # --- Generated outputs ---
 /figures/
 tmp/
 output/
-Results/legacy/generated_qa_*/
 *.inspect.ndjson
 *.npy
 *.npz

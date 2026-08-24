@@ -30,7 +30,7 @@ from big_sweep_phase2_crossday import ANIMAL_SESSIONS
 
 
 REPO = THIS.parents[3]
-RESULT_DIR = REPO / "Results" / "generalization"
+RESULT_DIR = REPO / "Results" / "workflows" / "generalization"
 FIG_DIR = RESULT_DIR / "figures"
 
 CONFIG_COLUMNS = [

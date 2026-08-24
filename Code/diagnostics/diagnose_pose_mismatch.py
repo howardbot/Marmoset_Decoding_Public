@@ -26,7 +26,7 @@ warnings.filterwarnings("ignore")
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 DATA_DIR = REPO_ROOT / "Data"
-REPORT_DIR = REPO_ROOT / "Results"
+REPORT_DIR = REPO_ROOT / "Results" / "workflows" / "data_quality"
 REPORT_DIR.mkdir(exist_ok=True)
 
 

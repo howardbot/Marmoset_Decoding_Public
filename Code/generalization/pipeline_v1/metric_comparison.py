@@ -5,8 +5,8 @@ both metrics side by side. If their pair-level Pearson r is high (> 0.7),
 choice of metric does not move the qualitative story.
 
 Outputs:
-  Results/generalization/metric_comparison_per_pair.csv
-  Results/generalization/metric_comparison.png
+  Results/workflows/generalization/metric_comparison_per_pair.csv
+  Results/workflows/generalization/metric_comparison.png
 """
 from __future__ import annotations
 
@@ -34,7 +34,7 @@ from manifold_align import cca_align, apply_alignment  # noqa: E402
 warnings.filterwarnings("ignore")
 
 REPO_ROOT = _THIS_DIR.parents[1]
-RES = REPO_ROOT / "Results" / "generalization"
+RES = REPO_ROOT / "Results" / "workflows" / "generalization"
 
 
 def eval_off_diagonal_metrics(train_data, test_data, lag_bins):

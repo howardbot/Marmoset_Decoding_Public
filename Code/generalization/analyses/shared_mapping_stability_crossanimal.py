@@ -38,7 +38,7 @@ N_CALIBRATION_TRIALS = 32
 N_EVALUATION_TRIALS = 8
 REPEATS = 5
 REPO = THIS_DIR.parents[2]
-OUT_DIR = REPO / "Results" / "manifold_geometry" / "shared_mapping_stability"
+OUT_DIR = REPO / "Results" / "workflows" / "manifold_geometry" / "shared_mapping_stability"
 
 
 def cosine_similarity(first: np.ndarray, second: np.ndarray) -> float:

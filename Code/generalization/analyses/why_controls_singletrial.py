@@ -43,7 +43,7 @@ D = 12                         # decode ALL canonical dims (was top-2)
 N_REPS = 5
 SEED = 0
 TARGETS = ["relative_velocity", "relative_position"]
-OUT = _THIS.parents[2] / "Results" / "manifold_geometry"
+OUT = _THIS.parents[2] / "Results" / "workflows" / "manifold_geometry"
 
 # session loading here,
 def load(session, target, exclude=()):

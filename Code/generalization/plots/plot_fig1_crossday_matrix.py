@@ -9,7 +9,7 @@ Each panel is a 15x15 matrix of M2 (mean per-trial Pearson r), with:
   * a thick white split line at the R1 | R2 boundary
   * shared viridis colormap with a common vmax (99th percentile)
 
-Reads ``Results/generalization/big_sweep_crossday_long.csv`` via
+Reads ``Results/workflows/generalization/big_sweep_crossday_long.csv`` via
 ``plotting_common.load_sweep``; all configuration deviations from LOCKED_CONFIG
 must come through that module so figures stay aligned.
 
@@ -24,7 +24,7 @@ and overlays true vs decoded trajectories for 10 trials chosen to span the
 per-trial corr distribution (NOT cherry-picked). Each panel is titled with that
 trial's corr -- the same quantity averaged into a Fig 1 diagonal cell.
 
-Writes all three PNGs into ``Results/generalization/figures/``.
+Writes all three PNGs into ``Results/workflows/generalization/figures/``.
 """
 from __future__ import annotations
 

@@ -11,9 +11,9 @@ import pandas as pd
 
 _THIS = Path(__file__).resolve().parent
 REPO = _THIS.parents[2]
-IN_DIR = REPO / "Results" / "manifold_geometry" / "private_direction_localization"
+IN_DIR = REPO / "Results" / "workflows" / "manifold_geometry" / "private_direction_localization"
 FIGURE = (
-    REPO / "Results" / "manifold_geometry" / "figures"
+    REPO / "Results" / "workflows" / "manifold_geometry" / "figures"
     / "fig_private_direction_localization.png"
 )
 FEATURES = ["pos_x", "pos_y", "pos_z", "vel_x", "vel_y", "vel_z", "speed"]

@@ -36,6 +36,19 @@ JOBS = {
         PYTHON,
         "Code/generalization/tools/build_project_manifests.py",
     ],
+    "publish-results": [
+        PYTHON,
+        "Code/generalization/tools/publish_current_results.py",
+    ],
+    "publish-check": [
+        PYTHON,
+        "Code/generalization/tools/publish_current_results.py",
+        "--check",
+    ],
+    "path-check": [
+        PYTHON,
+        "Code/generalization/tools/check_result_paths.py",
+    ],
     "check-links": [
         PYTHON,
         "Code/generalization/tools/check_markdown_links.py",

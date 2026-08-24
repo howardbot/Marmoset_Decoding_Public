@@ -21,9 +21,9 @@ We report:
   - Plots showing top predictor and actual vs predicted
 
 Outputs:
-  Results/generalization/decoder_predictors_features.csv
-  Results/generalization/decoder_predictors_univariate.csv
-  Results/generalization/decoder_predictors.png
+  Results/workflows/generalization/decoder_predictors_features.csv
+  Results/workflows/generalization/decoder_predictors_univariate.csv
+  Results/workflows/generalization/decoder_predictors.png
 """
 from __future__ import annotations
 
@@ -48,7 +48,7 @@ from manifold_align import heldout_canonical_correlations  # noqa: E402
 warnings.filterwarnings("ignore")
 
 REPO_ROOT = _THIS_DIR.parents[1]
-RES = REPO_ROOT / "Results" / "generalization"
+RES = REPO_ROOT / "Results" / "workflows" / "generalization"
 N_PHASE_BINS = 30
 
 

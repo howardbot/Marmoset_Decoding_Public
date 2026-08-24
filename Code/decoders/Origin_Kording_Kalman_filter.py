@@ -13,7 +13,7 @@ UNIT_QUALITIES = ("good", "mua")
 TRIAL_WINDOW = "start_to_peak"
 N_SPLITS = 5
 LAG_BINS_LIST = list(range(1, 16))  # 10ms..150ms with 10ms step (bin_size=0.01s)
-LAG_GRID_PLOT_PATH = Path(__file__).resolve().parents[2] / "Results" / "origin_kording_kalman_lag_grid_1.png"
+LAG_GRID_PLOT_PATH = Path(__file__).resolve().parents[2] / "Results" / "workflows" / "decoder_benchmarks" / "origin_kording_kalman_lag_grid_1.png"
 
 
 def corr_score_1d(y_true, y_pred):

@@ -30,7 +30,7 @@ from trim_r2_to_r1_std_band import (
 )
 
 REPO_ROOT = _THIS.parents[2]
-OUT_DIR = REPO_ROOT / "Results" / "manifold_geometry"
+OUT_DIR = REPO_ROOT / "Results" / "workflows" / "manifold_geometry"
 PAIR_COLUMN = "neural_pair_msd"
 
 

@@ -50,7 +50,7 @@ SMOOTHER_KW = {"smoother": "butter", "smooth_cutoff_hz": 6.0, "smooth_order": 2}
 # PCA dim, random seed,
 K, SEED= 15, 0
 TARGETS = ["relative_velocity", "relative_position"]
-OUT = _THIS.parents[2] / "Results" / "manifold_geometry"
+OUT = _THIS.parents[2] / "Results" / "workflows" / "manifold_geometry"
 
 
 def load(session, target, exclude=()):

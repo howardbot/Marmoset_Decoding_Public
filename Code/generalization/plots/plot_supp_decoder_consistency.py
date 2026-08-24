@@ -9,7 +9,7 @@ an artefact of the Kalman decoder.
            with y=x reference and Spearman rho. Same locked config; only
            decoder differs.
 
-Writes ``Results/generalization/figures/fig_supp_decoder_consistency.png``.
+Writes ``Results/workflows/generalization/figures/fig_supp_decoder_consistency.png``.
 """
 from __future__ import annotations
 

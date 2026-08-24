@@ -19,8 +19,8 @@ from subspace_inclusion import load  # same NWB/bin/smoothing config
 from big_sweep_phase2_crossday import SESSIONS_R1, SESSIONS_R2, EXCLUDE_TRIALS
 
 REPO = _THIS.parents[2]
-OUT_CSV = REPO / "Results" / "manifold_geometry" / "dim60_r1_vs_r2.csv"
-FIG = REPO / "Results" / "manifold_geometry" / "figures" / "fig_dim60_r1_vs_r2.png"
+OUT_CSV = REPO / "Results" / "workflows" / "manifold_geometry" / "dim60_r1_vs_r2.csv"
+FIG = REPO / "Results" / "workflows" / "manifold_geometry" / "figures" / "fig_dim60_r1_vs_r2.png"
 VAR_TARGET = 0.60
 
 

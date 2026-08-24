@@ -66,8 +66,8 @@ top of `big_sweep_phase2_crossday.py`.
 ### Scripts
 | script | scope | output CSV |
 |---|---|---|
-| `big_sweep_phase1_withinday.py` | within-day, 5-fold CV per session | `Results/generalization/big_sweep_withinday_long.csv` |
-| `big_sweep_phase2_crossday.py` | 15×15 cross-day matrix (diagonal = 5-fold CV; off-diagonal = CCA-aligned) | `Results/generalization/big_sweep_crossday_long.csv` |
+| `big_sweep_phase1_withinday.py` | within-day, 5-fold CV per session | `Results/workflows/generalization/big_sweep_withinday_long.csv` |
+| `big_sweep_phase2_crossday.py` | 15×15 cross-day matrix (diagonal = 5-fold CV; off-diagonal = CCA-aligned) | `Results/workflows/generalization/big_sweep_crossday_long.csv` |
 
 Both run on `N_WORKERS = 3` processes and **checkpoint per cell** — re-running
 skips any cell already in the CSV, so they are safe to Ctrl-C and resume.
@@ -102,7 +102,7 @@ colors, and helpers (`filter_locked`, `pivot_matrix`, `forward_reverse_pairs`,
 | `plot_supp_target_consistency.py` | S3 | velocity-vs-position scatter, colored by R1/R2 direction |
 | `plot_supp_trial41.py` | — | include / exclude / Δ matrix for 0828 trial 41 |
 
-All write PNGs to `Results/generalization/figures/` (git-ignored).
+All write PNGs to `Results/workflows/generalization/figures/` (git-ignored).
 
 ### Key findings (plain language)
 - **Transfer works but drops ~40%** off the training day (F1, F5).

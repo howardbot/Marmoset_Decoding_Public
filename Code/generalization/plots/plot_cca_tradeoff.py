@@ -9,7 +9,7 @@ Two things the review asked for and v1 did not show:
 
 Left axis (purple): per-dim held-out CC, R1->R1 (solid reference) vs R1->R2 (dashed).
 Right axis: cross-day decode corr vs #CCA dims, R1->R1 / R1->R2 / R2->R1.
-Reads Results/generalization/cca_sweep_long.csv ; writes fig_cca_tradeoff.png
+Reads Results/workflows/generalization/cca_sweep_long.csv ; writes fig_cca_tradeoff.png
 """
 from __future__ import annotations
 import pathlib
@@ -17,8 +17,8 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 REPO = pathlib.Path(__file__).resolve().parents[3]
-c = pd.read_csv(REPO / "Results" / "generalization" / "cca_sweep_long.csv")
-OUT = REPO / "Results" / "generalization" / "figures" / "fig_cca_tradeoff.png"
+c = pd.read_csv(REPO / "Results" / "workflows" / "generalization" / "cca_sweep_long.csv")
+OUT = REPO / "Results" / "workflows" / "generalization" / "figures" / "fig_cca_tradeoff.png"
 
 
 def pick(df):

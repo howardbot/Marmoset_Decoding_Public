@@ -38,7 +38,7 @@ from big_sweep_phase2_crossday import (  # noqa: E402
 from plotting_common import filter_locked  # noqa: E402
 
 REPO = _THIS.parents[2]
-RESULTS = REPO / "Results" / "generalization"
+RESULTS = REPO / "Results" / "workflows" / "generalization"
 INPUTS = {
     "TS": RESULTS / "big_sweep_crossday_long.csv",
     "TY": RESULTS / "big_sweep_crossday_long_ty.csv",

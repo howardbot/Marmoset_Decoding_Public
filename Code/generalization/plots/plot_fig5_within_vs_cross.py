@@ -11,7 +11,7 @@ and across epochs.
 
 Two panels: Kalman / velocity and Kalman / position at LOCKED_CONFIG.
 
-Writes ``Results/generalization/figures/fig5_within_vs_cross.png``.
+Writes ``Results/workflows/generalization/figures/fig5_within_vs_cross.png``.
 """
 from __future__ import annotations
 

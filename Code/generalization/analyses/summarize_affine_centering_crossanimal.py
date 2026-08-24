@@ -17,7 +17,7 @@ import pandas as pd
 
 
 REPO = Path(__file__).resolve().parent.parents[2]
-IN_DIR = REPO / "Results" / "manifold_geometry" / "h_observation_fine_swap"
+IN_DIR = REPO / "Results" / "workflows" / "manifold_geometry" / "h_observation_fine_swap"
 JOB_COUNTS = {"TS": 8, "TY": 6}
 CONDITIONS = (
     "original_concatenated", "original_trial_aware", "source_b",
@@ -31,7 +31,7 @@ OUT_SPLITS = IN_DIR / "affine_centering_crossanimal_splits.csv"
 OUT_PAIRS = IN_DIR / "affine_centering_crossanimal_pair_means.csv"
 OUT_SUMMARY = IN_DIR / "affine_centering_crossanimal_summary.csv"
 OUT_FIGURE = (
-    REPO / "Results" / "manifold_geometry" / "figures"
+    REPO / "Results" / "workflows" / "manifold_geometry" / "figures"
     / "fig_affine_centering_crossanimal.png"
 )
 

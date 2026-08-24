@@ -17,7 +17,7 @@ generalises worse. Necessary precondition, tested here per session (own PCA spac
 Prediction (hypothesis): R2 >= R1 on all three. If not, the hypothesis fails cheaply.
 
 Config: bin=30, butter_o2, sigma=50ms, K_PCS=12, ridge read-out, both targets.
-Reads NWB -> HatLab env. Output: Results/manifold_geometry/readout_reliability.csv (+ fig).
+Reads NWB -> HatLab env. Output: Results/workflows/manifold_geometry/readout_reliability.csv (+ fig).
 """
 from __future__ import annotations
 
@@ -53,8 +53,8 @@ N_BOOT = 30         # bootstrap resamples for weight stability
 SEED = 0
 TARGETS = ["relative_position", "relative_velocity"]
 REPO_ROOT = _THIS.parents[2]
-OUT_CSV = REPO_ROOT / "Results" / "manifold_geometry" / "readout_reliability.csv"
-FIG = REPO_ROOT / "Results" / "manifold_geometry" / "figures" / "fig_readout_reliability.png"
+OUT_CSV = REPO_ROOT / "Results" / "workflows" / "manifold_geometry" / "readout_reliability.csv"
+FIG = REPO_ROOT / "Results" / "workflows" / "manifold_geometry" / "figures" / "fig_readout_reliability.png"
 
 
 def load(session, target, exclude=()):

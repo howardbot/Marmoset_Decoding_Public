@@ -11,7 +11,7 @@ evaluate held-out CC on (traj q2, traj q3) — two same-day subsets. Cross-day (
 fit CCA on (traj a0, traj b0), eval on (traj a1, traj b1). Same quarter size everywhere.
 
 Uses the trajectory / held-out-CC machinery from cca_dynamics_surrogate (K_PCS=12).
-Output: Results/manifold_geometry/d8_normalized_similarity.csv (+ figure).
+Output: Results/workflows/manifold_geometry/d8_normalized_similarity.csv (+ figure).
 """
 from __future__ import annotations
 
@@ -34,8 +34,8 @@ warnings.filterwarnings("ignore")
 N_SPLITS = 100
 SEED = 0
 REPO = _THIS.parents[2]
-OUT_CSV = REPO / "Results" / "manifold_geometry" / "d8_normalized_similarity.csv"
-FIG = REPO / "Results" / "manifold_geometry" / "figures" / "fig_d8_normalized_similarity.png"
+OUT_CSV = REPO / "Results" / "workflows" / "manifold_geometry" / "d8_normalized_similarity.csv"
+FIG = REPO / "Results" / "workflows" / "manifold_geometry" / "figures" / "fig_d8_normalized_similarity.png"
 
 
 def quarters(cache, rng):

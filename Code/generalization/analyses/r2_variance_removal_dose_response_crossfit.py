@@ -109,6 +109,7 @@ REPO = _THIS.parents[2]
 DEFAULT_OUT_DIR = (
     REPO
     / "Results"
+    / "workflows"
     / "manifold_geometry"
     / "variance_removal_dose_response_crossfit"
 )

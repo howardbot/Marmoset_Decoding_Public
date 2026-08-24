@@ -18,7 +18,7 @@ construction and cannot explain the drop.
 
 Two panels: Kalman/velocity and Kalman/position at LOCKED_CONFIG.
 
-Writes ``Results/generalization/figures/fig3_time_drift.png``.
+Writes ``Results/workflows/generalization/figures/fig3_time_drift.png``.
 """
 from __future__ import annotations
 

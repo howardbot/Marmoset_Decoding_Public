@@ -35,23 +35,23 @@ from project_config import (  # noqa: E402
 REPO = THIS.parents[3]
 MATCHED_CSV = (
     REPO
-    / "Results/manifold_geometry/pairwise_neural_variability_band_decoding_TS_position.csv"
+    / "Results/workflows/manifold_geometry/pairwise_neural_variability_band_decoding_TS_position.csv"
 )
 SWEEP_FILES = {
-    "TS": REPO / "Results/generalization/big_sweep_crossday_long.csv",
-    "TY": REPO / "Results/generalization/big_sweep_crossday_long_ty.csv",
+    "TS": REPO / "Results/workflows/generalization/big_sweep_crossday_long.csv",
+    "TY": REPO / "Results/workflows/generalization/big_sweep_crossday_long_ty.csv",
 }
 MATCH_TEST_CSV = (
-    REPO / "Results/manifold_geometry/position_asymmetry_significance_matched_TS.csv"
+    REPO / "Results/workflows/manifold_geometry/position_asymmetry_significance_matched_TS.csv"
 )
 MATCH_PAIR_CSV = (
-    REPO / "Results/manifold_geometry/position_asymmetry_significance_pairs_TS.csv"
+    REPO / "Results/workflows/manifold_geometry/position_asymmetry_significance_pairs_TS.csv"
 )
 SWEEP_SUMMARY_CSV = (
-    REPO / "Results/generalization/big_sweep_position_asymmetry_significance_summary.csv"
+    REPO / "Results/workflows/generalization/big_sweep_position_asymmetry_significance_summary.csv"
 )
 FIGURE = (
-    REPO / "Results/manifold_geometry/figures/fig_position_asymmetry_significance.png"
+    REPO / "Results/workflows/manifold_geometry/figures/fig_position_asymmetry_significance.png"
 )
 
 CONFIG_COLUMNS = [
@@ -470,7 +470,7 @@ def main(argv=None) -> None:
         suffix = animal.lower()
         output = (
             REPO
-            / f"Results/generalization/big_sweep_position_asymmetry_significance_{suffix}.csv"
+            / f"Results/workflows/generalization/big_sweep_position_asymmetry_significance_{suffix}.csv"
         )
         tests.to_csv(output, index=False)
         all_sweep_tests.append(tests)

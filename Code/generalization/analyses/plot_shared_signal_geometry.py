@@ -10,8 +10,8 @@ import pandas as pd
 
 THIS_DIR = Path(__file__).resolve().parent
 REPO = THIS_DIR.parents[2]
-RESULT_DIR = REPO / "Results" / "manifold_geometry" / "shared_signal_geometry"
-FIGURE_DIR = REPO / "Results" / "manifold_geometry" / "figures"
+RESULT_DIR = REPO / "Results" / "workflows" / "manifold_geometry" / "shared_signal_geometry"
+FIGURE_DIR = REPO / "Results" / "workflows" / "manifold_geometry" / "figures"
 OUT = FIGURE_DIR / "fig_shared_signal_geometry.png"
 
 R1_COLOR = "#4D5156"

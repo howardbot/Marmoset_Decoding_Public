@@ -40,7 +40,7 @@ from scipy import stats
 
 THIS = Path(__file__).resolve()
 REPO = THIS.parents[3]
-RESULTS = REPO / "Results" / "manifold_geometry"
+RESULTS = REPO / "Results" / "workflows" / "manifold_geometry"
 FIGURES = RESULTS / "figures"
 CURRENT = REPO / "Results" / "current" / "comparisons" / "interference_vs_forget"
 CURRENT_TABLES = CURRENT / "tables"

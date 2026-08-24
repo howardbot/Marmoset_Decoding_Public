@@ -16,7 +16,7 @@ Decoders:
             "across-day aligned latent decoder").
 
 Output:
-  Results/generalization/big_sweep_crossday_long.csv
+  Results/workflows/generalization/big_sweep_crossday_long.csv
     One row per (bin, target, smoother, outlier_mode, train_session,
     test_session, lag_ms, decoder, history_ms).
 
@@ -97,7 +97,7 @@ UNIT_QUALITIES = ("good", "mua")
 TRIAL_RESULTS = ("S", "F")
 SEED = 0
 
-REPO_ROOT = GENERALIZATION_RESULTS_DIR.parents[1]
+REPO_ROOT = GENERALIZATION_RESULTS_DIR.parents[2]
 OUT_CSV = GENERALIZATION_RESULTS_DIR / "big_sweep_crossday_long.csv"
 
 # Outer-combo level parallelism: each worker takes one (bin, smoother, target)

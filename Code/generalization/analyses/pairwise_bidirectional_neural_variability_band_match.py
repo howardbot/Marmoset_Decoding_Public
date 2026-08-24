@@ -43,7 +43,7 @@ from match_trial_pair_variability import pair_matrix, subset_mean, subset_values
 from trim_r2_to_r1_std_band import date_label, distance_to_band, trial_contributions
 
 REPO_ROOT = _THIS.parents[2]
-OUT_DIR = REPO_ROOT / "Results" / "manifold_geometry"
+OUT_DIR = REPO_ROOT / "Results" / "workflows" / "manifold_geometry"
 # The matching algorithm is identical for the two metrics; only the input
 # pair-distance matrix changes.  Neural remains the default so existing
 # commands reproduce the original analysis.

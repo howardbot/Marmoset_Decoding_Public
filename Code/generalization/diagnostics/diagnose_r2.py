@@ -11,8 +11,8 @@ The r2 sessions are compared against the r1 distribution to flag outliers
 (in particular 20250828, whose within-day decoder failed: mean vel corr = 0.023).
 
 Output:
-  Results/generalization/r2_diagnostics.csv  -- one row per session
-  Results/generalization/r2_diagnostics.txt  -- printed report
+  Results/workflows/generalization/r2_diagnostics.csv  -- one row per session
+  Results/workflows/generalization/r2_diagnostics.txt  -- printed report
 """
 from __future__ import annotations
 
@@ -33,7 +33,7 @@ warnings.filterwarnings("ignore")
 
 REPO_ROOT = _THIS_DIR.parents[1]
 DATA_DIR = REPO_ROOT / "Data"
-OUT_DIR = REPO_ROOT / "Results" / "generalization"
+OUT_DIR = REPO_ROOT / "Results" / "workflows" / "generalization"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 

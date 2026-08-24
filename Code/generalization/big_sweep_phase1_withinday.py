@@ -11,7 +11,7 @@ Sweep dimensions (per session):
   fold               : 0..4 (5-fold CV by trial)
 
 Output:
-  Results/generalization/big_sweep_withinday_long.csv
+  Results/workflows/generalization/big_sweep_withinday_long.csv
     One row per (cell × lag × fold × decoder × history_ms).
     Cell = (session, outlier_mode, bin_size_ms, smoother, target_mode).
 
@@ -76,7 +76,7 @@ UNIT_QUALITIES = ("good", "mua")
 TRIAL_RESULTS = ("S", "F")
 SEED = 0
 
-REPO_ROOT = GENERALIZATION_RESULTS_DIR.parents[1]
+REPO_ROOT = GENERALIZATION_RESULTS_DIR.parents[2]
 OUT_CSV = GENERALIZATION_RESULTS_DIR / "big_sweep_withinday_long.csv"
 
 # Number of worker processes for cell-level parallelism. M2 has 4 perf cores;

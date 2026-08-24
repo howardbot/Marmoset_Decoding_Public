@@ -37,7 +37,7 @@ from private_readout_crossfit import (
 )
 
 REPO = _THIS.parents[2]
-OUT_DIR = REPO / "Results" / "manifold_geometry" / "decoder_audit"
+OUT_DIR = REPO / "Results" / "workflows" / "manifold_geometry" / "decoder_audit"
 TARGETS = ("relative_position", "relative_velocity")
 REPEATS = 5
 RIDGE_ALPHA = 1e-2

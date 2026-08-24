@@ -22,8 +22,8 @@ Q4: Does manifold alignment quality predict decoder transfer?
     beyond what canonical alignment captures.
 
 Outputs:
-  Results/generalization/r1_deep_dive.png
-  Results/generalization/r1_canonical_corr_matrix.csv
+  Results/workflows/generalization/r1_deep_dive.png
+  Results/workflows/generalization/r1_canonical_corr_matrix.csv
 """
 from __future__ import annotations
 
@@ -49,7 +49,7 @@ from manifold_align import heldout_canonical_correlations  # noqa: E402
 warnings.filterwarnings("ignore")
 
 REPO_ROOT = _THIS_DIR.parents[1]
-RES = REPO_ROOT / "Results" / "generalization"
+RES = REPO_ROOT / "Results" / "workflows" / "generalization"
 
 TOP_K_CANONICAL = 5  # average of top-k canonical correlations used as alignment quality
 

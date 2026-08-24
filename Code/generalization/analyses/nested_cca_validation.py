@@ -9,7 +9,7 @@ The train session is fully available in both conditions. Trial-averaged CCA
 (the headline pipeline) and single-trial CCA (the dimensionality sensitivity)
 are reported separately at d=3 and d=12.
 
-Output: Results/manifold_geometry/nested_cca_validation.csv
+Output: Results/workflows/manifold_geometry/nested_cca_validation.csv
 """
 from __future__ import annotations
 
@@ -52,7 +52,7 @@ TARGETS = ("relative_position", "relative_velocity")
 ALIGNMENT_MODES = ("average", "single_trial")
 
 REPO = _THIS.parents[2]
-OUT_CSV = REPO / "Results" / "manifold_geometry" / "nested_cca_validation.csv"
+OUT_CSV = REPO / "Results" / "workflows" / "manifold_geometry" / "nested_cca_validation.csv"
 
 
 def load_session(session: str, target: str, exclude=()):

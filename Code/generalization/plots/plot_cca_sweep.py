@@ -21,7 +21,7 @@ dimensions. The decoding asymmetry (R1->R2 below R2->R1) lives in the decode
 figure but NOT in the symmetric alignment figure -- i.e. the asymmetry is a
 readout phenomenon, not an alignment-quality one.
 
-Reads Results/generalization/cca_sweep_long.csv.
+Reads Results/workflows/generalization/cca_sweep_long.csv.
 """
 from __future__ import annotations
 
@@ -38,7 +38,7 @@ sys.path.insert(0, str(_THIS))
 from plotting_common import PAIR_COLORS, config_caption, ensure_fig_dir
 
 REPO_ROOT = _THIS.parents[1]
-CSV = REPO_ROOT / "Results" / "generalization" / "cca_sweep_long.csv"
+CSV = REPO_ROOT / "Results" / "workflows" / "generalization" / "cca_sweep_long.csv"
 
 DIRECTED = ["R1->R1", "R1->R2", "R2->R1", "R2->R2"]
 UNORDERED_COLORS = {"R1-R1": "#7f8c8d", "R1-R2": "#e74c3c", "R2-R2": "#34495e"}

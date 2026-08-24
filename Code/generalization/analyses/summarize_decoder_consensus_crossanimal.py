@@ -29,11 +29,11 @@ from decoder_consensus_crossanimal import PRIMARY_CONDITIONS
 
 REPO = Path(__file__).resolve().parent.parents[2]
 CONSENSUS_DIR = (
-    REPO / "Results" / "manifold_geometry" / "decoder_consensus_crossanimal"
+    REPO / "Results" / "workflows" / "manifold_geometry" / "decoder_consensus_crossanimal"
 )
-MAPPING_DIR = REPO / "Results" / "manifold_geometry" / "shared_mapping_stability"
+MAPPING_DIR = REPO / "Results" / "workflows" / "manifold_geometry" / "shared_mapping_stability"
 FIGURE = (
-    REPO / "Results" / "manifold_geometry" / "figures"
+    REPO / "Results" / "workflows" / "manifold_geometry" / "figures"
     / "fig_decoder_consensus_crossanimal.png"
 )
 N_REPEATS = 5

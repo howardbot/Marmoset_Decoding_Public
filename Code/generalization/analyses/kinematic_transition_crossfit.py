@@ -17,7 +17,7 @@ from kalman_components import fit_state_dynamics, transition_indices
 from private_readout_crossfit import N_FOLDS, SEED, TARGET, load_session, trial_folds
 
 REPO = _THIS.parents[2]
-OUT_DIR = REPO / "Results" / "manifold_geometry" / "kalman_component_swap"
+OUT_DIR = REPO / "Results" / "workflows" / "manifold_geometry" / "kalman_component_swap"
 
 
 def fit_transition(state, calibration, meta):

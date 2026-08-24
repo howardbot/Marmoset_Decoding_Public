@@ -24,6 +24,7 @@ bridge_stub.kin_residual = None
 bridge_stub.load = None
 sys.modules.setdefault("global_state_bridge", bridge_stub)
 big_stub = types.ModuleType("big_sweep_phase2_crossday")
+big_stub.ANIMAL_SESSIONS = {}
 big_stub.EXCLUDE_TRIALS = {}
 big_stub.SESSIONS_R1 = []
 big_stub.SESSIONS_R2 = []

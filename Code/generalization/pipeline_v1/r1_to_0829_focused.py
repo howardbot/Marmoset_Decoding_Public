@@ -20,8 +20,8 @@ We report:
   - distribution overlay (off-diag r1<->r1 vs r1->0829)
 
 Outputs:
-  Results/generalization/r1_to_0829_table.csv
-  Results/generalization/r1_to_0829.png
+  Results/workflows/generalization/r1_to_0829_table.csv
+  Results/workflows/generalization/r1_to_0829.png
 """
 from __future__ import annotations
 
@@ -37,7 +37,7 @@ _THIS_DIR = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(_THIS_DIR))
 
 REPO_ROOT = _THIS_DIR.parents[1]
-RES = REPO_ROOT / "Results" / "generalization"
+RES = REPO_ROOT / "Results" / "workflows" / "generalization"
 
 TARGET_DATE = "20250829"
 

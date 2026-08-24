@@ -23,7 +23,7 @@ from decoder_utils import reach_marker_names, reach_side_for_session
 # ---------------------------------------------------------------------------
 REPO_ROOT = Path(__file__).resolve().parents[2]
 DATA_DIR = REPO_ROOT / "Data"
-FIG_DIR = REPO_ROOT / "Results" / "legacy" / "diagnostics" / "figures"
+FIG_DIR = REPO_ROOT / "Results" / "archive" / "legacy" / "diagnostics" / "figures"
 FIG_DIR.mkdir(parents=True, exist_ok=True)
 
 SESSION = "TSAL20250812_0830_staticAndStaticFree001"

@@ -57,7 +57,7 @@ SMOOTHER_KW = {
 WIENER_HISTORY_MS = 50
 TARGETS = ("relative_position", "relative_velocity")
 DECODERS = ("kalman", "wiener")
-OUT = _THIS.parents[2] / "Results" / "manifold_geometry"
+OUT = _THIS.parents[2] / "Results" / "workflows" / "manifold_geometry"
 FIG = OUT / "figures"
 
 

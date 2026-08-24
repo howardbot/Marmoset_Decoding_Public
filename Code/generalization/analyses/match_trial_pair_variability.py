@@ -22,9 +22,9 @@ presented as an independent confirmatory test.
 
 Outputs
 -------
-Results/manifold_geometry/variability_match_last3_summary.csv
-Results/manifold_geometry/variability_match_last3_trials.csv
-Results/manifold_geometry/figures/fig_variability_match_last3.png
+Results/workflows/manifold_geometry/variability_match_last3_summary.csv
+Results/workflows/manifold_geometry/variability_match_last3_trials.csv
+Results/workflows/manifold_geometry/figures/fig_variability_match_last3.png
 """
 from __future__ import annotations
 
@@ -52,7 +52,7 @@ sys.path.insert(0, str(_THIS.parent))
 from big_sweep_phase2_crossday import SESSIONS_R1, SESSIONS_R2
 
 REPO_ROOT = _THIS.parents[2]
-OUT_DIR = REPO_ROOT / "Results" / "manifold_geometry"
+OUT_DIR = REPO_ROOT / "Results" / "workflows" / "manifold_geometry"
 PAIR_CSV = OUT_DIR / "trial_pair_variability_TS_pairs.csv"
 OUT_SUMMARY = OUT_DIR / "variability_match_last3_summary.csv"
 OUT_TRIALS = OUT_DIR / "variability_match_last3_trials.csv"

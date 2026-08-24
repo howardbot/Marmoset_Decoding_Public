@@ -45,8 +45,8 @@ warnings.filterwarnings("ignore")
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = REPO_ROOT / "Data"
-RESULTS_DIR = REPO_ROOT / "Results"
-FIG_DIR = REPO_ROOT / "Results" / "legacy" / "diagnostics" / "figures"
+RESULTS_DIR = REPO_ROOT / "Results" / "workflows" / "decoder_benchmarks"
+FIG_DIR = RESULTS_DIR / "figures"
 RESULTS_DIR.mkdir(exist_ok=True)
 FIG_DIR.mkdir(parents=True, exist_ok=True)
 

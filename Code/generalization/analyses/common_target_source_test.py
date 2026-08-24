@@ -58,7 +58,7 @@ CONDITIONS = (
     ("kalman", "behaviour_center"),
 )
 REPO = THIS_DIR.parents[2]
-OUT_DIR = REPO / "Results" / "manifold_geometry" / "common_target_source_test"
+OUT_DIR = REPO / "Results" / "workflows" / "manifold_geometry" / "common_target_source_test"
 
 
 def select_common_target(

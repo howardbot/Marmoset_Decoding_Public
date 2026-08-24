@@ -48,7 +48,7 @@ from forget_control_equal_n_crossday import (  # noqa: E402
 from locked_position_time_resolved import decode_with_predictions  # noqa: E402
 
 REPO = THIS.parents[3]
-OUT_DIR = REPO / "Results" / "manifold_geometry"
+OUT_DIR = REPO / "Results" / "workflows" / "manifold_geometry"
 FIGURE_DIR = OUT_DIR / "figures"
 TARGET_MODE = "relative_position"
 N_REPEATS = 50

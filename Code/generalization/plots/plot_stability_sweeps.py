@@ -34,7 +34,7 @@ from plotting_common import filter_locked
 
 
 REPO = THIS.parents[3]
-RESULTS = REPO / "Results"
+RESULTS = REPO / "Results" / "workflows" / "decoder_benchmarks"
 
 BIN_MS = 30
 LAG_MS = 0

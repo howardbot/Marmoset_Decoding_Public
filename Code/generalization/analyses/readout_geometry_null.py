@@ -8,7 +8,7 @@ Pure geometry — no data reload. Monte-Carlo random orthonormal subspaces in R^
 observed subspace dims: cross-day = read-out(n_out) vs read-out(n_out); within-day = top-M PC vs
 read-out(n_out). Compares the observed means (from the L3 CSVs) against the null distribution.
 
-Output: Results/manifold_geometry/readout_geometry_null.csv
+Output: Results/workflows/manifold_geometry/readout_geometry_null.csv
 """
 from __future__ import annotations
 from pathlib import Path
@@ -17,7 +17,7 @@ import pandas as pd
 
 _THIS = Path(__file__).resolve().parent
 REPO = _THIS.parents[2]
-DIR = REPO / "Results" / "manifold_geometry"
+DIR = REPO / "Results" / "workflows" / "manifold_geometry"
 K, M_TOP, N = 12, 3, 20000
 rng = np.random.default_rng(0)
 

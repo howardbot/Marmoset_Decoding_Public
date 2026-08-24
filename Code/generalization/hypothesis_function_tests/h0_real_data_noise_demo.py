@@ -6,8 +6,8 @@ Gaussian noise into the first decoder dimensions so their standard deviation is
 slightly above the real-data baseline.
 
 Outputs:
-  Results/manifold_geometry/hypothesis_function_tests/h0_real_data_noise_demo.png
-  Results/manifold_geometry/hypothesis_function_tests/h0_real_data_noise_demo_summary.csv
+  Results/workflows/manifold_geometry/hypothesis_function_tests/h0_real_data_noise_demo.png
+  Results/workflows/manifold_geometry/hypothesis_function_tests/h0_real_data_noise_demo_summary.csv
 """
 from __future__ import annotations
 
@@ -34,7 +34,7 @@ from big_sweep_phase2_crossday import EXCLUDE_TRIALS
 
 DEFAULT_R1 = "TSAL20250813_0830_staticAndStaticFree001"
 DEFAULT_R2 = "TSAL20250830_0830_interferenceAndInterferenceFree001"
-OUT_DIR = REPO / "Results" / "manifold_geometry" / "hypothesis_function_tests"
+OUT_DIR = REPO / "Results" / "workflows" / "manifold_geometry" / "hypothesis_function_tests"
 
 
 def inject_to_target_std(Y, target_stds, rng, dims=D):

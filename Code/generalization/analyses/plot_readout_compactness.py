@@ -9,10 +9,10 @@ import pandas as pd
 
 THIS_DIR = Path(__file__).resolve().parent
 REPO = THIS_DIR.parents[2]
-IN_DIR = REPO / "Results" / "manifold_geometry" / "readout_compactness"
+IN_DIR = REPO / "Results" / "workflows" / "manifold_geometry" / "readout_compactness"
 SESSION_CSV = IN_DIR / "readout_compactness_by_session.csv"
 ALL_CSV = IN_DIR / "readout_compactness_all.csv"
-FIG = REPO / "Results" / "manifold_geometry" / "figures" / "fig_readout_compactness.png"
+FIG = REPO / "Results" / "workflows" / "manifold_geometry" / "figures" / "fig_readout_compactness.png"
 
 COLORS = {"R1": "#6f7678", "R2": "#d44a3a"}
 RNG = np.random.default_rng(20260715)

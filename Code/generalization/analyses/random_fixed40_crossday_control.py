@@ -10,9 +10,9 @@ consequence of target-informed neural+position variability selection.
 
 Outputs
 -------
-Results/manifold_geometry/random_fixed40_<target>_long.csv
-Results/manifold_geometry/random_fixed40_<target>_summary.csv
-Results/manifold_geometry/figures/fig_random_fixed40_<target>_control.png
+Results/workflows/manifold_geometry/random_fixed40_<target>_long.csv
+Results/workflows/manifold_geometry/random_fixed40_<target>_summary.csv
+Results/workflows/manifold_geometry/figures/fig_random_fixed40_<target>_control.png
 """
 from __future__ import annotations
 
@@ -49,7 +49,7 @@ from decode_variability_matched_crossday import (
 from position_asymmetry_significance import crossed_session_bootstrap, gap_test
 
 REPO_ROOT = _THIS.parents[2]
-OUT_DIR = REPO_ROOT / "Results" / "manifold_geometry"
+OUT_DIR = REPO_ROOT / "Results" / "workflows" / "manifold_geometry"
 MATCHED_CSV = OUT_DIR / "variability_matched_crossday_fixed40.csv"
 OUT_LONG = OUT_DIR / "random_fixed40_velocity_long.csv"
 OUT_SUMMARY = OUT_DIR / "random_fixed40_velocity_summary.csv"

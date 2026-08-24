@@ -10,8 +10,8 @@ within one R2 date.  Tests are reported at three complementary levels:
 
 Outputs
 -------
-Results/generalization/ty_paired_directional_significance.csv
-Results/generalization/figures/fig_ty_paired_directional_significance.png
+Results/workflows/generalization/ty_paired_directional_significance.csv
+Results/workflows/generalization/figures/fig_ty_paired_directional_significance.png
 """
 from __future__ import annotations
 
@@ -33,7 +33,7 @@ from scipy import stats
 
 THIS = Path(__file__).resolve()
 REPO = THIS.parents[3]
-RESULTS = REPO / "Results" / "generalization"
+RESULTS = REPO / "Results" / "workflows" / "generalization"
 FIGURES = RESULTS / "figures"
 
 INPUT = RESULTS / "locked_position_asymmetry_pairs_ty.csv"

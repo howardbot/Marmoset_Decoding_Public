@@ -19,7 +19,7 @@ which we don't have (units are re-sorted each day). So we test the intent two wa
     working space, not raw neuron space.
 
 Config: locked single-trial phase-matched CCA, K_PCS=15, both targets.
-Output: printed table + CSV + figure (Results/manifold_geometry/...).
+Output: printed table + CSV + figure (Results/workflows/manifold_geometry/...).
 NOTE: n(R2)=3 -> epoch-level neural-dimensionality stats are n=3 for R2.
 """
 from __future__ import annotations
@@ -54,7 +54,7 @@ K = 15
 SEED = 0
 TARGET_FOR_ALIGN = "relative_velocity"     # alignment target (decode space); both give same neural
 REPO = _THIS.parents[2]
-OUT = REPO / "Results" / "manifold_geometry"
+OUT = REPO / "Results" / "workflows" / "manifold_geometry"
 FIG = OUT / "figures"
 
 

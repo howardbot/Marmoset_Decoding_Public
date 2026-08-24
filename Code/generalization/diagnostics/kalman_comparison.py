@@ -16,9 +16,9 @@ Both use C = 1.0 noise scaling and reset the Kalman state at the start of
 each test trial during prediction.
 
 Outputs:
-  Results/generalization/kalman_comparison_per_session.csv
-  Results/generalization/kalman_comparison_per_fold.csv
-  Results/generalization/kalman_comparison.png
+  Results/workflows/generalization/kalman_comparison_per_session.csv
+  Results/workflows/generalization/kalman_comparison_per_fold.csv
+  Results/workflows/generalization/kalman_comparison.png
 """
 from __future__ import annotations
 
@@ -48,8 +48,8 @@ from cross_day_decoder import (  # noqa: E402
 
 warnings.filterwarnings("ignore")
 
-RES = _THIS_DIR.parents[1] / "Results" / "generalization"
-FIG_DIR = _THIS_DIR.parents[1] / "Results" / "legacy" / "report_figures"
+RES = _THIS_DIR.parents[1] / "Results" / "workflows" / "generalization"
+FIG_DIR = _THIS_DIR.parents[1] / "Results" / "archive" / "legacy" / "report_figures"
 RES.mkdir(parents=True, exist_ok=True)
 FIG_DIR.mkdir(parents=True, exist_ok=True)
 

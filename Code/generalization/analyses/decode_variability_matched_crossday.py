@@ -15,8 +15,8 @@ silently made.
 
 Outputs
 -------
-Results/manifold_geometry/variability_matched_crossday_fixed40.csv
-Results/manifold_geometry/figures/
+Results/workflows/manifold_geometry/variability_matched_crossday_fixed40.csv
+Results/workflows/manifold_geometry/figures/
     fig_variability_matched_crossday_fixed40_velocity.png
     fig_variability_matched_crossday_fixed40_position.png
 """
@@ -64,7 +64,7 @@ from plotting_common import SWEEP_CSV, filter_locked, load_sweep, pivot_matrix
 warnings.filterwarnings("ignore")
 
 REPO_ROOT = _THIS.parents[2]
-OUT_DIR = REPO_ROOT / "Results" / "manifold_geometry"
+OUT_DIR = REPO_ROOT / "Results" / "workflows" / "manifold_geometry"
 SELECTION_SUMMARY = OUT_DIR / "variability_match_all42_fixed40_tol10_summary.csv"
 SELECTION_TRIALS = OUT_DIR / "variability_match_all42_fixed40_tol10_trials.csv"
 OUT_CSV = OUT_DIR / "variability_matched_crossday_fixed40.csv"

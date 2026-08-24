@@ -25,7 +25,7 @@ from big_sweep_phase2_crossday import ANIMAL_SESSIONS
 from match_trial_pair_variability import pair_matrix, subset_mean
 
 REPO_ROOT = _THIS.parents[2]
-OUT_DIR = REPO_ROOT / "Results" / "manifold_geometry"
+OUT_DIR = REPO_ROOT / "Results" / "workflows" / "manifold_geometry"
 METRICS = {
     "neural": "neural_pair_msd",
     "position": "position_pair_msd",

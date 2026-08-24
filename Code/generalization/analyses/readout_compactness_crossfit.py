@@ -28,7 +28,7 @@ WHITENING_RIDGE = 1e-6
 MODES = ("all_available", "trial_matched")
 
 REPO = THIS_DIR.parents[2]
-OUT_DIR = REPO / "Results" / "manifold_geometry" / "readout_compactness"
+OUT_DIR = REPO / "Results" / "workflows" / "manifold_geometry" / "readout_compactness"
 
 
 def select_trials(meta, allowed, n_trials, rng):

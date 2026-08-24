@@ -31,7 +31,7 @@ from decode_variability_matched_crossday import (
 from trim_r2_to_r1_std_band import date_label
 
 REPO_ROOT = _THIS.parents[2]
-OUT_DIR = REPO_ROOT / "Results" / "manifold_geometry"
+OUT_DIR = REPO_ROOT / "Results" / "workflows" / "manifold_geometry"
 TARGET_MODES = ("relative_position", "relative_velocity")
 MATCH_DIRECTIONS = ("trim_r2_to_r1", "trim_r1_to_r2")
 MATCH_METRICS = ("neural", "position")
