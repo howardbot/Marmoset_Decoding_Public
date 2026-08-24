@@ -1,0 +1,38 @@
+# --- Data: public repository keeps documentation only ---
+Data/*
+!Data/README.md
+!Data/session_manifest.csv
+
+# --- Generated outputs ---
+/figures/
+tmp/
+output/
+Results/legacy/generated_qa_*/
+*.inspect.ndjson
+*.npy
+*.npz
+*.pkl
+*.parquet
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+env/
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# --- Claude Code / AI assistants ---
+.claude/
+CLAUDE.md
+.cursorrules

@@ -1,0 +1,2 @@
+contrast,interference_grid,forget_grid,interference_mean_gap,forget_mean_gap,observed_difference,bootstrap_replicates,bootstrap_ci95_low,bootstrap_ci95_high,bootstrap_fraction_le0,bootstrap_p_two_sided,seed
+interference_gap_minus_forget_gap,14x3,3x3,0.10139688674698984,0.03008380399172128,0.07131308275526856,50000,-0.05964660922720745,0.17940023812271289,0.13902,0.27804,20260818
