@@ -3,6 +3,14 @@ Data/*
 !Data/README.md
 !Data/session_manifest.csv
 
+# --- Local-only research materials: never publish ---
+References/papers/
+Reports/archive/
+Reports/supporting/
+Code/generalization/docs/archive/
+Code/generalization/docs/notes/
+Code/generalization/docs/presentations/
+
 # --- Generated outputs ---
 /figures/
 tmp/
